@@ -1,7 +1,7 @@
 package DOTS;
 
 public class SimpleLinkedListLines<T> {
-    private ListNode<T> head;
+    private Node<T> head;
     private int size;
     public T data;
 
@@ -16,24 +16,23 @@ public class SimpleLinkedListLines<T> {
 
 
 
-    public void append(T data) {
-        ListNode<T> newNode = new ListNode<T>(data);
-        ListNode<T> tmp = this.head;
+    public void append(Node node) {
+        Node<T> tmp = this.head;
         if (this.head == null) {
-            this.head = newNode;
+            this.head = node;
             this.size++;
         } else {
             while (tmp.getNext() != null) {
                 tmp = tmp.getNext();
             }
-            tmp.setNext(newNode);
-            newNode.setNext(null);
+            tmp.setNext(node);
+            node.setNext(null);
             this.size++;
         }
     }
 
-    public ListNode<T> getListNode(int index){
-        ListNode<T> current = head;
+    public Node<T> getListNode(int index){
+        Node<T> current = head;
         if (index < size) {
             for (int j = 0; j < size; j++) {
                 if (index == j) {
