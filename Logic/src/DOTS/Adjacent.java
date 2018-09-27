@@ -1,6 +1,6 @@
 package DOTS;
 
-public class Adjacent {
+public class Adjacent<T> {
 
     public void Seters (DoubleLinkedList<DoubleLinkedList<Integer>> malla){
         for (int i = 0; i < malla.getSize(); i++) {
@@ -88,6 +88,16 @@ public class Adjacent {
                     nodeset.setDrd(malla.getNode(i + 1).getData().getNode(j+1));
                     nodeset.setDlu(null);
                     nodeset.setDld(null);
+                }
+                else{
+                    nodeset.setLeft(line.getNode(j-1));
+                    nodeset.setUp(malla.getNode(i - 1).getData().getNode(j));
+                    nodeset.setDown(malla.getNode(i + 1).getData().getNode(j));
+                    nodeset.setRight(line.getNode(j + 1));
+                    nodeset.setDru(malla.getNode(i - 1).getData().getNode(j+1));
+                    nodeset.setDrd(malla.getNode(i + 1).getData().getNode(j+1));
+                    nodeset.setDlu(malla.getNode(i - 1).getData().getNode(j-1));
+                    nodeset.setDld(malla.getNode(i + 1).getData().getNode(j-1));
                 }
             }
         }

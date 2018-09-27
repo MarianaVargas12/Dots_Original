@@ -66,6 +66,7 @@ public class EchoThread extends Thread {
         try {
             inp = socket.getInputStream();
             brinp = new BufferedReader(new InputStreamReader(inp));
+
             out = new DataOutputStream(socket.getOutputStream());
         } catch (IOException e) {
             return;
@@ -103,5 +104,17 @@ public class EchoThread extends Thread {
             }
         }
 
+    }
+    public void patito(){
+        Player player= Player.getPlayers();
+        if (!player.isP1()){
+            //cerrar clientes y servidores
+            player.setP1(true);
+        }
+        else if(!player.isP2()){
+            //cerrar cliente y servidor
+            player.setP2(true);
+
+        }
     }
 }

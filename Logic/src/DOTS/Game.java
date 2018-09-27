@@ -2,7 +2,6 @@ package DOTS;
 
 public class Game {
     DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
-    SimpleLinkedListLines Lines;
 
     public Game(){
         DoubleLinkedList<Integer> L1 = new DoubleLinkedList<Integer>();
@@ -27,9 +26,7 @@ public class Game {
         naming(Malla);
         Adjacent ad = new Adjacent();
         ad.Seters(Malla);
-        SimpleLinkedListLines Lines = new SimpleLinkedListLines();
         this.Malla = Malla;
-        this.Lines = Lines;
     }
 
     public void fillup(DoubleLinkedList list){
