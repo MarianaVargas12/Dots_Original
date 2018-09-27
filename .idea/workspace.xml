@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Agregos al Servidor" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Agregos al Servidor">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOTS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Game.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Game_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/Fondo_juego.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/fondo_inicio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/greenDot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/loading8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/orangeDot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/purpleDot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/sBlueDot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/salir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Image/yellowDot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/JSONManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/NetworkClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/Vertices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/fill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/sample/segmento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/Adjacent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/EchoThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/src/DOTS/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Queue/src/LinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Queue/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-simple-1.1.1.jar" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -116,7 +172,7 @@
     <session id="862878271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.opened" value="2" />
@@ -206,6 +262,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -270,6 +327,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DOTS" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
+              <item name="Queue" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -286,7 +348,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537759423741" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538021546670" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
