@@ -7,12 +7,28 @@
       <sourceFolder url="file://$MODULE_DIR$/Logic/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Queue/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Socket/src" isTestSource="false" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      <sourceFolder url="file://$MODULE_DIR$/Server/src" isTestSource="false" />
+>>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
+>>>>>>> 950015c5858e881d2c3941b89560ff933348029b
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jfoenix-8.0.7" level="project" />
     <orderEntry type="library" name="json-simple-1.1" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="json-simple-1.1.11" level="project" />
     <orderEntry type="library" name="jfoenix-8.0.71" level="project" />
+=======
+<<<<<<< HEAD
+    <orderEntry type="library" name="json-simple-1.1.11" level="project" />
+    <orderEntry type="library" name="jfoenix-8.0.71" level="project" />
+=======
+    <orderEntry type="library" name="json-simple-1.1.1" level="project" />
+>>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
+>>>>>>> 950015c5858e881d2c3941b89560ff933348029b
   </component>
 </module>
