@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="486.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game_Controller">
+    <children>
+        <ImageView fitHeight="567.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true" />
+        <AnchorPane layoutX="564.0" prefHeight="561.0" prefWidth="196.0">
+            <children>
+                <Label layoutX="14.0" layoutY="57.0" text="Puntaje" />
+                <Label layoutX="14.0" layoutY="233.0" text="Puntaje de contricante" />
+                <Button layoutX="54.0" layoutY="488.0" mnemonicParsing="false" text="Regresar" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="Game" layoutX="2.0" onMouseClicked="#coordinate" prefHeight="567.0" prefWidth="567.0">
+            <children>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="228.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/greenDot.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="390.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/orangeDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="228.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/purpleDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="66.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/sBlueDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="66.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="66.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/greenDot.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="66.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/orangeDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="471.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/purpleDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="228.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/sBlueDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="147.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="147.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/greenDot.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="228.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/orangeDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="66.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/purpleDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="147.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/sBlueDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="147.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/greenDot.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="390.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/orangeDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="390.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/purpleDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/sBlueDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="228.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="471.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/greenDot.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="471.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/orangeDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="228.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/purpleDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/sBlueDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="471.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/greenDot.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/orangeDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/purpleDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="390.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/sBlueDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="390.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="390.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/greenDot.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="147.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/orangeDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="147.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/purpleDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="66.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="471.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/yellowDot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="471.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/sBlueDot.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="732.0" onMouseClicked="#onExitButton" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/salir.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
