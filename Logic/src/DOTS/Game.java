@@ -1,7 +1,11 @@
 package DOTS;
 
 public class Game {
+<<<<<<< HEAD
     DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
+=======
+    public DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
+>>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
 
     public Game(){
         DoubleLinkedList<Integer> L1 = new DoubleLinkedList<Integer>();

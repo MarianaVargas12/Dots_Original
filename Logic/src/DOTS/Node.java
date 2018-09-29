@@ -12,19 +12,32 @@ public class Node<T> {
     private Node drd;
     private Node dlu;
     private Node dld;
+<<<<<<< HEAD
     public SimpleLinkedListLines<T> lineas = new SimpleLinkedListLines<T>();
+=======
+    public SimpleLinkedListLines<Node<Integer>> lineas;
+>>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
 
     public Node(T data) {
         this.next=null;
         this.data = data;
     }
 
+<<<<<<< HEAD
     public SimpleLinkedListLines<T> getLineas() {
         return lineas;
     }
 
     public void setLineas(SimpleLinkedListLines<T> lineas) {
         this.lineas = lineas;
+=======
+    public SimpleLinkedListLines<Node<Integer>> getLineas() {
+        return lineas;
+    }
+
+    public void setLineas(Node node) {
+        lineas.append(node);
+>>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
     }
 
     public Node<T> getDld() {

@@ -6,7 +6,11 @@ import org.json.simple.JSONObject;
 
 public class JSONManager {
 
+<<<<<<< HEAD
     JSONManager() {}
+=======
+    public JSONManager() {}
+>>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
 
 
     public String clientWrite(int x1, int y1, int x2, int y2) {
