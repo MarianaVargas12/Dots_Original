@@ -1,6 +1,7 @@
 package DOTS;
 
 public class Game {
+
     public DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
 
     public Game(){
@@ -34,7 +35,6 @@ public class Game {
 
             list.append(new Node<Integer>(null));
         }
-        return;
     }
 
     public void naming(DoubleLinkedList<DoubleLinkedList<Integer>> malla){

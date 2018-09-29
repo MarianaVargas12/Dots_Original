@@ -1,7 +1,5 @@
 package DOTS;
 
-import java.net.Socket;
-
 public class Player {
     private int score=0;
     private boolean turn= false;
@@ -11,63 +9,63 @@ public class Player {
     private int conscore=0;
     private static Socket client;
 
-    public Player(){
+    public Player() {
 
     }
 
-    public boolean isTurn() {
-        return turn;
+    public boolean isT1() {
+        return t1;
     }
 
-    public int getScore() {
-        return score;
+    public boolean isT2() {
+        return t2;
     }
 
-    public String getColor() {
-        return color;
+    public int getScore1() {
+        return score1;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public static Player getPlayers() {
+        return players;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setEnd1(boolean end1) {
+        this.end1 = end1;
     }
 
-    public void setTurn(boolean turn) {
-        this.turn = turn;
+    public int getSocre2() {
+        return socre2;
     }
 
-    public int getConscore() {
-        return conscore;
+    public void setEnd2(boolean end2) {
+        this.end2 = end2;
     }
 
-    public String getName() {
-        return name;
+    public void setP1(boolean p1) {
+        this.p1 = p1;
     }
 
-    public String getShapes() {
-        return shapes;
+    public void setP2(boolean p2) {
+        this.p2 = p2;
     }
 
-    public void setConscore(int conscore) {
-        this.conscore = conscore;
+    public static void setPlayers(Player players) {
+        Player.players = players;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setScore1(int score1) {
+        this.score1 = score1;
     }
 
-    public void setShapes(String shapes) {
-        this.shapes = shapes;
+    public void setSocre2(int socre2) {
+        this.socre2 = socre2;
     }
 
-    public static Socket getClient() {
-        return client;
+    public void setT1(boolean t1) {
+        this.t1 = t1;
     }
 
-    public void setClient(Socket client) {
-        this.client = client;
+    public void setT2(boolean t2) {
+        this.t2 = t2;
     }
 }

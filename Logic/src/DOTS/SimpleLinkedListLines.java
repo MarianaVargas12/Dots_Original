@@ -7,7 +7,7 @@ public class SimpleLinkedListLines<T> {
 
     public SimpleLinkedListLines() {
         this.head = null;
-        this.size = 0;
+        this.size = 1;
     }
 
     public int getSize() {
@@ -16,23 +16,23 @@ public class SimpleLinkedListLines<T> {
 
 
 
-    public SimpleLinkedListLines append(Node node) {
-        Node<T> tmp = this.head;
-        if (this.head == null) {
-            this.head = node;
+    public void append(Node newNode){
+        Node<T> tmp=this.head;
+        if (this.head==null){
+            this.head=newNode;
             this.size++;
-        } else {
+        }
+        else {
             while (tmp.getNext() != null) {
                 tmp = tmp.getNext();
             }
-            tmp.setNext(node);
-            node.setNext(null);
+            tmp.setNext(newNode);
+            newNode.setNext(null);
             this.size++;
         }
-        return null;
     }
 
-    public Node<T> getListNode(int index){
+    public Node<T> getNode(int index){
         Node<T> current = head;
         if (index < size) {
             for (int j = 0; j < size; j++) {

@@ -6,7 +6,6 @@ public class LinkedQueue {
         Object elem;
         String name;
         String color;
-
         Node Next;
 
         public Node(Object o, String Name,String Color) {

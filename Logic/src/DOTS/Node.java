@@ -12,6 +12,7 @@ public class Node<T> {
     private Node drd;
     private Node dlu;
     private Node dld;
+
     public SimpleLinkedListLines<T> lineas= new SimpleLinkedListLines<T>();
 
     public Node(T data) {
@@ -23,8 +24,8 @@ public class Node<T> {
         return lineas;
     }
 
-    public void setLineas(Node node) {
-        lineas.append(node);
+    public void setLineas(SimpleLinkedListLines<T> lineas) {
+        this.lineas = lineas;
     }
 
     public Node<T> getDld() {

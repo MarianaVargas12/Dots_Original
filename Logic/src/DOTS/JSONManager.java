@@ -8,7 +8,6 @@ public class JSONManager {
 
     public JSONManager() {}
 
-
     public String clientWrite(int x1, int y1, int x2, int y2) {
 
         JSONObject obj = new JSONObject();
