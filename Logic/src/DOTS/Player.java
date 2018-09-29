@@ -1,88 +1,78 @@
 package DOTS;
 
+import java.net.Socket;
+
 public class Player {
-    private static Player players= new Player();
-    private boolean p1= false;
-    private boolean p2=false;
-    private boolean t1=false;
-    private boolean t2=true;
-    private boolean end1=false;
-    private boolean end2=false;
-    private int score1=0;
-    private int socre2=0;
-    
+    private static Player player=new Player();
+    private int score=0;
+    private boolean turn= false;
+    private String color="";
+    private String name="";
+    private String shapes="";
+    private int conscore=0;
+    private static Socket client;
 
-    public static void restart(){players= new Player();}
-
-    public boolean isEnd1() {
-        return end1;
+    public static void setPlayer(Player player) {
+        Player.player = player;
     }
 
-    public boolean isEnd2() {
-        return end2;
+    public static Player getPlayer() {
+        return player;
     }
 
-    public boolean isP1() {
-        return p1;
+    public boolean isTurn() {
+        return turn;
     }
 
-    public boolean isP2() {
-        return p2;
+    public int getScore() {
+        return score;
     }
 
-    public boolean isT1() {
-        return t1;
+    public String getColor() {
+        return color;
     }
 
-    public boolean isT2() {
-        return t2;
+    public void setScore(int score) {
+        this.score = score;
     }
 
-    public int getScore1() {
-        return score1;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public static Player getPlayers() {
-        return players;
+    public void setTurn(boolean turn) {
+        this.turn = turn;
     }
 
-    public void setEnd1(boolean end1) {
-        this.end1 = end1;
+    public int getConscore() {
+        return conscore;
     }
 
-    public int getSocre2() {
-        return socre2;
+    public String getName() {
+        return name;
     }
 
-    public void setEnd2(boolean end2) {
-        this.end2 = end2;
+    public String getShapes() {
+        return shapes;
     }
 
-    public void setP1(boolean p1) {
-        this.p1 = p1;
+    public void setConscore(int conscore) {
+        this.conscore = conscore;
     }
 
-    public void setP2(boolean p2) {
-        this.p2 = p2;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public static void setPlayers(String players) {
-        Player.players = players;
+    public void setShapes(String shapes) {
+        this.shapes = shapes;
     }
 
-    public void setScore1(int score1) {
-        this.score1 = score1;
+    public static Socket getClient() {
+        return client;
     }
 
-    public void setSocre2(int socre2) {
-        this.socre2 = socre2;
-    }
-
-    public void setT1(boolean t1) {
-        this.t1 = t1;
-    }
-
-    public void setT2(boolean t2) {
-        this.t2 = t2;
+    public void setClient(Socket client) {
+        this.client = client;
     }
 }

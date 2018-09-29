@@ -15,6 +15,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
+    public static String name;
+    public static String color;
+    public static  NetworkClient client;
     @FXML
     private AnchorPane InicialPanel;
     @FXML
@@ -28,7 +31,6 @@ public class Controller implements Initializable {
     @FXML
     private JFXTextField NombreField;
     private boolean willConsume = false;
-
     public Controller() {
     }
 
@@ -45,12 +47,15 @@ public class Controller implements Initializable {
     }
 
     public void onReadyButtonClicked(MouseEvent event) {
+        name=NombreField.getText();
+        color= IpField.getText();
         System.out.println(NombreField.getText());
         System.out.println(IpField.getText());
         this.RegistroPanel.setVisible(false);
         this.InicialPanel.setVisible(false);
         this.EsperaPanel.setVisible(false);
         this.ContricantePanel.setVisible(true);
+        client= new NetworkClient();
     }
 
     public void onPlayButtonClicked(MouseEvent event) {

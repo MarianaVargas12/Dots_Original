@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Logic/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Queue/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Socket/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Server/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

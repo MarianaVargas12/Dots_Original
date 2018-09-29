@@ -1,13 +1,18 @@
 package Queue;
-
+import java.net.Socket;
 public class LinkedQueue {
 
     class Node {
         Object elem;
+        String name;
+        String color;
+
         Node Next;
 
-        public Node(Object o) {
+        public Node(Object o, String Name,String Color) {
             elem = o;
+            name=Name;
+            color=Color;
             Next = null;
         }
     }
@@ -21,8 +26,9 @@ public class LinkedQueue {
         size = 0;
     }
 
-    public void enqueue(Object o) {
-        Node new_node = new Node(o);
+    public void enqueue(Socket o, String name, String color) {
+        Node new_node = new Node(o,name,color);
+        System.out.println("enqueue");
         if (first == null) {
             first = new_node;
             end = new_node;
@@ -50,13 +56,31 @@ public class LinkedQueue {
         return size;
     }
 
-    public Object peek() {
-        if (first == null)
+    public Socket peek() {
+        if (first == null) {
             return null;
-        else
-            System.out.println(first.elem);
-        return first.elem;
+        }
+        else {
+            return (Socket) first.elem;
+        }
     }
+
+    public String name() {
+        if (first == null) {
+            return null;
+        } else {
+            return first.name;
+        }
+    }
+
+    public String color() {
+        if (first == null) {
+            return null;
+        } else {
+            return first.color;
+        }
+    }
+
     public void all(){
         Node current= first;
         while(current!=null){

@@ -28,7 +28,7 @@ public class NetworkClient {
         PrintWriter os=null;
 
         try {
-            s1=new Socket("192.168.1.138", 1978); // You can use static final constant PORT_NUM
+            s1=new Socket(address, 1978); // You can use static final constant PORT_NUM
             br= new BufferedReader(new InputStreamReader(System.in));
             is=new BufferedReader(new InputStreamReader(s1.getInputStream()));
             os= new PrintWriter(s1.getOutputStream());

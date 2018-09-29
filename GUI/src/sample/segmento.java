@@ -43,10 +43,9 @@ public class segmento {
         int ind = 0;
         while (ind < 36) {
             if (vertices[ind][0] <= endX && endX<= vertices[ind][1] && vertices[ind][2] >= endY && endY >= vertices[ind][3]) {
-                //JSONManager Manager= new JSONManager();
-                //String message = Manager.clientWrite(startX,startY,vertices[ind][4],vertices[ind][5]);
-                //NetworkClient client= new NetworkClient();
-                //client.sendData(message);
+                JSONManager Manager= new JSONManager();
+                String message = Manager.clientWrite(startX,startY,vertices[ind][4],vertices[ind][5]);
+                Controller.client.sendData(message);
 
                 boolean Vali= true;
                 return verif(Vali, startX, startY, vertices[ind][4], vertices[ind][5]);

@@ -106,7 +106,7 @@ public class EchoThread extends Thread {
 
     }
     public void patito(){
-        Player player= Player.getPlayers();
+        Players player= Players.getPlayers();
         if (!player.isP1()){
             //cerrar clientes y servidores
             player.setP1(true);
@@ -114,6 +114,13 @@ public class EchoThread extends Thread {
         else if(!player.isP2()){
             //cerrar cliente y servidor
             player.setP2(true);
+            player.setT1(true);
+            player.setT2(false);
+            if(player.isT1()){
+            }
+            if(player.isT2()){
+
+            }
 
         }
     }
