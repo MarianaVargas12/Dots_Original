@@ -22,8 +22,8 @@ public class gameStart extends Thread{
     public gameStart() {
         this.malla = game.Malla;
         this.players= Players.getPlayers();
-        this.P1 = Player.getPlayer();
-        this.P2 = Player.getPlayer();
+        this.P1 = new Player();
+        this.P2 = new Player();
         P1.setClient(ThreadedEchoServer.queue.peek());
         P1.setColor(ThreadedEchoServer.queue.color());
         P1.setName(ThreadedEchoServer.queue.name());
@@ -63,13 +63,18 @@ public class gameStart extends Thread{
         int StartList = (y1/81)-1;
         int FinishList = (y2/81)-1;
         Node Node1 = malla.getNode(StartList).getData().getNode(StartNode);
+        System.out.println(Node1);
         Node Node2 = malla.getNode(FinishList).getData().getNode(FinishNode);
+
         if (Node2==Node1.getRight() || Node2==Node1.getDown() || Node2==Node1.getLeft() || Node2==Node1.getUp() || Node2==Node1.getDrd() || Node2==Node1.getDld() || Node2==Node1.getDlu() || Node2==Node1.getDru()){
+            System.out.println("error");
+            System.out.println(Node1.lineas);
             for (int i = 0; i < Node1.lineas.getSize(); i++) {
-                if (Node1 == Node2.lineas.getListNode(i).getData()) {
+                if (Node2 == Node1.lineas.getListNode(i).getData()) {
                     return false;
                 }
             }
+            LogicLine(Node1,Node2);
             return true;
         }
         else{
@@ -85,6 +90,9 @@ public class gameStart extends Thread{
         DataOutputStream outP1;
         DataOutputStream outP2;
         String line;
+        System.out.println(P1);
+        System.out.println(P2);
+
         while (ActiveGame) {
             try {
                 outP1 = new DataOutputStream(P1.getClient().getOutputStream());
@@ -97,6 +105,8 @@ public class gameStart extends Thread{
                 }
                 if( Players.isT1()){
                     line = brinpP1.readLine();
+                    System.out.println(line);
+                    System.out.println("line1");
                     if(line == null){
 
                     }else {
@@ -125,6 +135,7 @@ public class gameStart extends Thread{
                 }else if(Players.isT2()){
 
                     line = brinpP2.readLine();
+                    System.out.println("line2");
                     if(line == null){
 
                     }else {

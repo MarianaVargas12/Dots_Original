@@ -47,17 +47,29 @@ public class Controller implements Initializable {
     }
 
     public void onReadyButtonClicked(MouseEvent event) {
-        name=NombreField.getText();
-        color= IpField.getText();
-        System.out.println(NombreField.getText());
-        System.out.println(IpField.getText());
-        this.RegistroPanel.setVisible(false);
-        this.InicialPanel.setVisible(false);
-        this.EsperaPanel.setVisible(false);
-        this.ContricantePanel.setVisible(true);
-        client= new NetworkClient();
+        try {
+            name=NombreField.getText();
+            color= IpField.getText();
+            System.out.println(NombreField.getText());
+            System.out.println(IpField.getText());
+            this.RegistroPanel.setVisible(false);
+            this.InicialPanel.setVisible(false);
+            this.EsperaPanel.setVisible(false);
+            this.ContricantePanel.setVisible(true);
+            client= new NetworkClient();
+            JSONManager Manager= new JSONManager();
+            String message = Manager.id(14);
+            Controller.client.sendData(message);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
+    public void random(){
+        char [] abc= new char[27];
+        abc= new char[]{'a', 'b', 'c', 'd', 'e', 'f'};
+        //abc.index(random)
+    }
     public void onPlayButtonClicked(MouseEvent event) {
         this.RegistroPanel.setVisible(true);
         this.InicialPanel.setVisible(false);

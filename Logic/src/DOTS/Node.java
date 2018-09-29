@@ -12,14 +12,14 @@ public class Node<T> {
     private Node drd;
     private Node dlu;
     private Node dld;
-    public SimpleLinkedListLines<Node<Integer>> lineas;
+    public SimpleLinkedListLines<T> lineas= new SimpleLinkedListLines<T>();
 
     public Node(T data) {
         this.next=null;
         this.data = data;
     }
 
-    public SimpleLinkedListLines<Node<Integer>> getLineas() {
+    public SimpleLinkedListLines<T> getLineas() {
         return lineas;
     }
 

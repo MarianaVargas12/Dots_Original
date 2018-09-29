@@ -3,7 +3,6 @@ package DOTS;
 import java.net.Socket;
 
 public class Player {
-    private static Player player=new Player();
     private int score=0;
     private boolean turn= false;
     private String color="";
@@ -12,12 +11,8 @@ public class Player {
     private int conscore=0;
     private static Socket client;
 
-    public static void setPlayer(Player player) {
-        Player.player = player;
-    }
+    public Player(){
 
-    public static Player getPlayer() {
-        return player;
     }
 
     public boolean isTurn() {

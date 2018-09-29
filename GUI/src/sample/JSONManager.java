@@ -25,6 +25,18 @@ public class JSONManager {
 
     }
 
+    public String id(int id) {
+
+        JSONObject obj = new JSONObject();
+
+        obj.put("id", id);
+
+
+        return obj.toString();
+
+
+    }
+
     public String serverWrite(boolean playing, boolean draw) {
 
         JSONObject obj = new JSONObject();
