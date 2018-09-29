@@ -2,46 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c02beb-0d8f-4202-8161-50db0fe987dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jfoenix-8.0.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DOTS/LinkedQueue$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DOTS/LinkedQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DOTS/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DOTS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DOTS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/segmento.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/segmento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/EchoThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/EchoThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/ListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Path.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queue/src/Queue/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queue/src/Queue/LinkedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queue/src/Queue/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queue/src/Queue/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/EchoThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/EchoThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/JSONManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/JSONManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/Path.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/SimpleLinkedListLines.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/SimpleLinkedListLines.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/ThreadedEchoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/ThreadedEchoServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/Queue/LinkedQueue$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/Queue/LinkedQueue$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/Queue/LinkedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/Queue/LinkedQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/Queue/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/Queue/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/sample/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/sample/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/sample/Controller$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/sample/NetworkClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/sample/NetworkClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/sample/segmento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/sample/segmento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,22 +83,24 @@
     <session id="862878271">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -147,46 +112,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Players.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-              <folding>
-                <element signature="e#1116#1117#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1495#1496#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
-                <element signature="e#1560#1561#0" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -230,47 +155,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="181">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
-                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
                 <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-                <element signature="e#957#958#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1027#1028#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#831#832#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
                 <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1501#1502#0" expanded="true" />
-                <element signature="e#1538#1539#0" expanded="true" />
-                <element signature="e#1566#1567#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="94">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-448">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DOTS.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -312,8 +262,10 @@
         <option value="$PROJECT_DIR$/Queue/src/Queue/LinkedQueue.java" />
         <option value="$PROJECT_DIR$/Queue/src/Queue/main.java" />
         <option value="$PROJECT_DIR$/GUI/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/Player.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Node.java" />
+        <option value="$PROJECT_DIR$/DOTS.iml" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/Player.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" />
       </list>
     </option>
   </component>
@@ -440,7 +392,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -457,7 +409,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.45826235" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.45737705" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -504,9 +456,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DOTS.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Adjacent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1314">
@@ -575,13 +524,6 @@
             <element signature="e#1560#1561#0" expanded="true" />
             <element signature="e#1588#1589#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
@@ -693,57 +635,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DOTS.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="181">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
-            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
             <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1612">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="116">
+          <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>

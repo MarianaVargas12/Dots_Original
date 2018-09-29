@@ -24,12 +24,10 @@ public class gameStart extends Thread{
         this.players= Players.getPlayers();
         this.P1 = new Player();
         this.P2 = new Player();
-        P1.setClient(ThreadedEchoServer.queue.peek());
         P1.setColor(ThreadedEchoServer.queue.color());
         P1.setName(ThreadedEchoServer.queue.name());
         players.setP1(true);
         ThreadedEchoServer.queue.dequeue();
-        P2.setClient(ThreadedEchoServer.queue.peek());
         P2.setColor(ThreadedEchoServer.queue.color());
         P2.setName(ThreadedEchoServer.queue.name());
         players.setP1(true);
@@ -70,7 +68,7 @@ public class gameStart extends Thread{
             System.out.println("error");
             System.out.println(Node1.lineas);
             for (int i = 0; i < Node1.lineas.getSize(); i++) {
-                if (Node2 == Node1.lineas.getListNode(i).getData()) {
+                if (Node2 == Node1.lineas.getNode(i).getData()) {
                     return false;
                 }
             }
