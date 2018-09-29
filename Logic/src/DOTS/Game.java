@@ -1,15 +1,8 @@
 package DOTS;
 
 public class Game {
-<<<<<<< HEAD
-    DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
-=======
-<<<<<<< HEAD
-    DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
-=======
+
     public DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
 
     public Game(){
         DoubleLinkedList<Integer> L1 = new DoubleLinkedList<Integer>();
@@ -42,7 +35,6 @@ public class Game {
 
             list.append(new Node<Integer>(null));
         }
-        return;
     }
 
     public void naming(DoubleLinkedList<DoubleLinkedList<Integer>> malla){

@@ -1,39 +1,17 @@
 package Queue;
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
 import java.net.Socket;
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
 public class LinkedQueue {
 
     class Node {
         Object elem;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
-        Node Next;
-
-        public Node(Object o) {
-            elem = o;
-<<<<<<< HEAD
-=======
-=======
         String name;
         String color;
-
         Node Next;
 
         public Node(Object o, String Name,String Color) {
             elem = o;
             name=Name;
             color=Color;
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
             Next = null;
         }
     }
@@ -47,19 +25,9 @@ public class LinkedQueue {
         size = 0;
     }
 
-<<<<<<< HEAD
-    public void enqueue(Object o) {
-        Node new_node = new Node(o);
-=======
-<<<<<<< HEAD
-    public void enqueue(Object o) {
-        Node new_node = new Node(o);
-=======
     public void enqueue(Socket o, String name, String color) {
         Node new_node = new Node(o,name,color);
         System.out.println("enqueue");
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
         if (first == null) {
             first = new_node;
             end = new_node;
@@ -87,20 +55,6 @@ public class LinkedQueue {
         return size;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
-    public Object peek() {
-        if (first == null)
-            return null;
-        else
-            System.out.println(first.elem);
-        return first.elem;
-    }
-<<<<<<< HEAD
-=======
-=======
     public Socket peek() {
         if (first == null) {
             return null;
@@ -126,8 +80,6 @@ public class LinkedQueue {
         }
     }
 
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
     public void all(){
         Node current= first;
         while(current!=null){

@@ -15,15 +15,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
     public static String name;
     public static String color;
     public static  NetworkClient client;
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
     @FXML
     private AnchorPane InicialPanel;
     @FXML
@@ -37,14 +31,6 @@ public class Controller implements Initializable {
     @FXML
     private JFXTextField NombreField;
     private boolean willConsume = false;
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
     public Controller() {
     }
 
@@ -61,27 +47,15 @@ public class Controller implements Initializable {
     }
 
     public void onReadyButtonClicked(MouseEvent event) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
         name=NombreField.getText();
         color= IpField.getText();
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
         System.out.println(NombreField.getText());
         System.out.println(IpField.getText());
         this.RegistroPanel.setVisible(false);
         this.InicialPanel.setVisible(false);
         this.EsperaPanel.setVisible(false);
         this.ContricantePanel.setVisible(true);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
         client= new NetworkClient();
->>>>>>> 52ada341f780f4a34268bc7e16f2d58d0ded84dc
->>>>>>> 950015c5858e881d2c3941b89560ff933348029b
     }
 
     public void onPlayButtonClicked(MouseEvent event) {
