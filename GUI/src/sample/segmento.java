@@ -6,6 +6,7 @@ import org.json.simple.JSONObject;
 import java.io.IOException;
 
 public class segmento {
+    private boolean Vali =true ;
     private double startx;
     private double starty;
     private double endx;
@@ -43,12 +44,10 @@ public class segmento {
         int ind = 0;
         while (ind < 36) {
             if (vertices[ind][0] <= endX && endX<= vertices[ind][1] && vertices[ind][2] >= endY && endY >= vertices[ind][3]) {
-                //JSONManager Manager= new JSONManager();
-                //String message = Manager.clientWrite(startX,startY,vertices[ind][4],vertices[ind][5]);
-                //NetworkClient client= new NetworkClient();
-                //client.sendData(message);
-
-                boolean Vali= true;
+                JSONManager Manager= new JSONManager();
+                String message = Manager.clientWrite(startX,startY,vertices[ind][4],vertices[ind][5],Controller.getId());
+                Vali=Controller.client.sendData(message);
+                System.out.println(Vali);
                 return verif(Vali, startX, startY, vertices[ind][4], vertices[ind][5]);
             }
             ind++;

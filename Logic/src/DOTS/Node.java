@@ -12,7 +12,6 @@ public class Node<T> {
     private Node drd;
     private Node dlu;
     private Node dld;
-
     public SimpleLinkedListLines<T> lineas= new SimpleLinkedListLines<T>();
 
     public Node(T data) {

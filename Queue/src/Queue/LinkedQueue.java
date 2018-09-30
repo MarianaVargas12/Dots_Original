@@ -25,7 +25,7 @@ public class LinkedQueue {
         size = 0;
     }
 
-    public void enqueue(Socket o, String name, String color) {
+    public void enqueue(String o, String name, String color) {
         Node new_node = new Node(o,name,color);
         System.out.println("enqueue");
         if (first == null) {
@@ -55,12 +55,12 @@ public class LinkedQueue {
         return size;
     }
 
-    public Socket peek() {
+    public String peek() {
         if (first == null) {
             return null;
         }
         else {
-            return (Socket) first.elem;
+            return (String) first.elem;
         }
     }
 

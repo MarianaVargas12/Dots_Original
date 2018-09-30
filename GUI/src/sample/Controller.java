@@ -13,11 +13,14 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.UUID;
 
-public class Controller implements Initializable {
-    public static String name;
-    public static String color;
-    public static  NetworkClient client;
+public class Controller {
+    private static boolean Play = false ;
+    private static String id;
+    public String name;
+    public String color;
+    public static NetworkClient client;
     @FXML
     private AnchorPane InicialPanel;
     @FXML
@@ -30,7 +33,7 @@ public class Controller implements Initializable {
     private JFXTextField IpField;
     @FXML
     private JFXTextField NombreField;
-    private boolean willConsume = false;
+
     public Controller() {
     }
 
@@ -39,37 +42,42 @@ public class Controller implements Initializable {
         System.exit(0);
     }
 
+    public static String getId() {
+        return id;
+    }
+
     public void onOkButtonClicked(MouseEvent event) {
-        this.RegistroPanel.setVisible(true);
-        this.InicialPanel.setVisible(false);
-        this.EsperaPanel.setVisible(false);
-        this.ContricantePanel.setVisible(false);
+        try {
+            id = String.valueOf(UUID.randomUUID());
+            System.out.println(id);
+            name = NombreField.getText();
+            color = IpField.getText();
+            this.RegistroPanel.setVisible(false);
+            this.InicialPanel.setVisible(false);
+            this.EsperaPanel.setVisible(true);
+            this.ContricantePanel.setVisible(false);
+            client = new NetworkClient();
+            JSONManager Manager = new JSONManager();
+            String message = Manager.id(id, name, color);
+            Play=client.sendData(message);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        //this.RegistroPanel.setVisible(true);
+        //this.InicialPanel.setVisible(false);
+        //this.EsperaPanel.setVisible(false);
+        //this.ContricantePanel.setVisible(false);
     }
 
     public void onReadyButtonClicked(MouseEvent event) {
-        try {
-            name=NombreField.getText();
-            color= IpField.getText();
-            System.out.println(NombreField.getText());
-            System.out.println(IpField.getText());
+        if(Play) {
             this.RegistroPanel.setVisible(false);
             this.InicialPanel.setVisible(false);
             this.EsperaPanel.setVisible(false);
             this.ContricantePanel.setVisible(true);
-            client= new NetworkClient();
-            JSONManager Manager= new JSONManager();
-            String message = Manager.id(14);
-            Controller.client.sendData(message);
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
-    public void random(){
-        char [] abc= new char[27];
-        abc= new char[]{'a', 'b', 'c', 'd', 'e', 'f'};
-        //abc.index(random)
-    }
     public void onPlayButtonClicked(MouseEvent event) {
         this.RegistroPanel.setVisible(true);
         this.InicialPanel.setVisible(false);
@@ -80,57 +88,5 @@ public class Controller implements Initializable {
     @FXML
     public void OnGame() throws IOException {
         Main.setScene("Game.fxml");
-    }
-    EventHandler<KeyEvent> handlerLetters= new EventHandler<KeyEvent>() {
-        private boolean willConsume=true;
-        @Override
-        public void handle(KeyEvent event) {
-            Object temp0 = event.getSource();
-            if (willConsume) {
-                event.consume();
-            }
-
-            String temp = event.getCode().toString();
-            if (!event.getCode().toString().matches("[a-zA-Z]") && event.getCode() != KeyCode.BACK_SPACE && event.getCode() != KeyCode.SHIFT) {
-                if (event.getEventType() == KeyEvent.KEY_PRESSED) {
-                    this.willConsume = true;
-                } else if (event.getEventType() == KeyEvent.KEY_PRESSED) {
-                    this.willConsume = false;
-                }
-            }
-        }
-    };
-    EventHandler<KeyEvent> handlerNumbers= new EventHandler<KeyEvent>() {
-        private boolean willConsume=false;
-        private int maxLenght=10;
-
-        @Override
-        public void handle(KeyEvent event) {
-            JFXTextField temp=(JFXTextField) event.getSource();
-            if(willConsume){
-                event.consume();
-            }
-            if(!event.getText().matches("[0-9]") && event.getCode()!=KeyCode.BACK_SPACE){
-                if(event.getEventType()==KeyEvent.KEY_PRESSED){
-                    willConsume=true;
-                }else if(event.getEventType()==KeyEvent.KEY_RELEASED){
-                    willConsume=false;
-                }
-            }
-            if(temp.getText().length()>maxLenght-1){
-                if(event.getEventType()==KeyEvent.KEY_PRESSED){
-                    willConsume=true;
-                }else if(event.getEventType()==KeyEvent.KEY_RELEASED){
-                    willConsume=false;
-                }
-            }
-
-        }
-    };
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        //NombreField.addEventFilter(<handlerLetters>);
-        //IpField.addEventFilter(KeyEvent.ANY.handlerNumbers);
     }
 }

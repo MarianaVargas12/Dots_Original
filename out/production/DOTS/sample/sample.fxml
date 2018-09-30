@@ -64,7 +64,7 @@
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Label>
-                <JFXButton layoutX="128.0" layoutY="397.0" onMouseClicked="#onReadyButtonClicked" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #2e4e9b;" text="Aceptar">
+                <JFXButton layoutX="128.0" layoutY="397.0" onMouseClicked="#onOkButtonClicked" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #2e4e9b;" text="Aceptar">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
@@ -73,11 +73,6 @@
         </AnchorPane>
         <AnchorPane fx:id="EsperaPanel" layoutY="196.0" prefHeight="155.0" prefWidth="364.0" visible="false">
             <children>
-                <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@Image/loading1.png" />
-                    </image>
-                </ImageView>
                 <Label layoutX="89.0" layoutY="38.0" text="Esperando contricante">
                     <font>
                         <Font name="System Bold" size="17.0" />
@@ -85,37 +80,7 @@
                 </Label>
                 <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
-                        <Image url="@Image/loading2.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                    <image>
-                        <Image url="@Image/loading3.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                    <image>
-                        <Image url="@Image/loading4.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                    <image>
-                        <Image url="@Image/loading5.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                    <image>
-                        <Image url="@Image/loading6.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                    <image>
-                        <Image url="@Image/loading7.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                    <image>
-                        <Image url="@Image/loading8.png" />
+                        <Image url="@Image/loading.gif" />
                     </image>
                 </ImageView>
             </children>

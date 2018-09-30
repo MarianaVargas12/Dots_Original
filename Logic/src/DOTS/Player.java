@@ -6,6 +6,7 @@ public class Player {
     private String color="";
     private String name="";
     private String shapes="";
+    private String id="a";
     private int conscore=0;
 
     public Player() {
@@ -58,5 +59,13 @@ public class Player {
 
     public void setConscore(int conscore) {
         this.conscore = conscore;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
 }
