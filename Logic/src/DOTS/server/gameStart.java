@@ -6,10 +6,12 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.net.Socket;
 
 public class gameStart extends Thread{
     private  Player P1;
     private  Player P2;
+    protected Socket socket;
     private Players players;
     private JSONManager manager = new JSONManager();
     private DoubleLinkedList<DoubleLinkedList<Integer>> malla;
@@ -81,28 +83,20 @@ public class gameStart extends Thread{
     }
 
     public void run() {
-        InputStream inpP1;
-        InputStream inpP2;
-        BufferedReader brinpP1;
-        BufferedReader brinpP2;
-        DataOutputStream outP1;
-        DataOutputStream outP2;
+        InputStream inp;
+        BufferedReader brinp;
+        DataOutputStream out;
         String line;
-        System.out.println(P1);
-        System.out.println(P2);
 
         while (ActiveGame) {
             try {
-                outP1 = new DataOutputStream(P1.getClient().getOutputStream());
-                outP2 = new DataOutputStream(P2.getClient().getOutputStream());
-                inpP1 = P1.getClient().getInputStream();
-                inpP2 = P2.getClient().getInputStream();
-                brinpP1 = new BufferedReader(new InputStreamReader(inpP1));
-                brinpP2 = new BufferedReader(new InputStreamReader(inpP2));
+                inp = socket.getInputStream();
+                brinp = new BufferedReader(new InputStreamReader(inp));
+                out = new DataOutputStream(socket.getOutputStream());
                 if(players.isP1()==false && players.isP2()==false) {
                 }
                 if( Players.isT1()){
-                    line = brinpP1.readLine();
+                    line = brinp.readLine();
                     System.out.println(line);
                     System.out.println("line1");
                     if(line == null){
@@ -110,8 +104,8 @@ public class gameStart extends Thread{
                     }else {
                         if (CoordsToNode(line)) {
                             String message = manager.serverWrite(true, true);
-                            outP1.writeBytes(message + "\n");
-                            outP1.flush();
+                            out.writeBytes(message + "\n");
+                            out.flush();
                             if(shape()){
                                 //figura formada enviar vertices y asignar puntos al id del jugador
                                 players.setT1(false);
@@ -123,24 +117,24 @@ public class gameStart extends Thread{
                             }
 
                         } else if ((line == null) || line.equalsIgnoreCase("QUIT")) {
-                            P1.getClient().close();
+                            socket.close();
                             return;
                         } else {
-                            outP1.writeBytes(manager.serverWrite(false, false) + "\n");
-                            outP1.flush();
+                            out.writeBytes(manager.serverWrite(false, false) + "\n");
+                            out.flush();
                         }
                     }
                 }else if(Players.isT2()){
 
-                    line = brinpP2.readLine();
+                    line = brinp.readLine();
                     System.out.println("line2");
                     if(line == null){
 
                     }else {
                         if (CoordsToNode(line)) {
                             String message = manager.serverWrite(true, true);
-                            outP2.writeBytes(message + "\n");
-                            outP2.flush();
+                            out.writeBytes(message + "\n");
+                            out.flush();
                             if(shape()){
                                 players.setT1(true);
                                 players.setT2(false);
@@ -150,17 +144,16 @@ public class gameStart extends Thread{
                             }
 
                         } else if ((line == null) || line.equalsIgnoreCase("QUIT")) {
-                            P2.getClient().close();
+                            socket.close();
                             return;
                         } else {
-                            outP2.writeBytes(manager.serverWrite(false, false) + "\n");
-                            outP2.flush();
+                            out.writeBytes(manager.serverWrite(false, false) + "\n");
+                            out.flush();
                         }
                     }
                 }else if(endGame){
                     if(P1.getScore()>P2.getScore()){
-                        outP1.flush();
-                        outP2.flush();
+                        out.flush();
                     }
                     if(P1.getScore()<P2.getScore()){
 
