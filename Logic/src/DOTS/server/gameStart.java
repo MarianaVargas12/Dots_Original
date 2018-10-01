@@ -41,9 +41,6 @@ public class gameStart extends Thread{;
         Score = score;
     }
 
-    private boolean shape(){
-        return true;
-    }
     public void LogicLine(Node node1, Node node2) {
         node1.lineas.append(node2);
         node2.lineas.append(node1);
@@ -146,7 +143,7 @@ public class gameStart extends Thread{;
                     //enviar booleano para pasar de pantalla
                 } else if (players.isP1() && players.isP2()) {
                     if (id.equals(P1.getId()) || id.equals(P2.getId())) {
-                         if (endGame) {
+                         if (EndGame()) {
                             if (P1.getScore() > P2.getScore()) {
                                 if(id.equals(P1.getId())) {
                                     players.setP1(false);

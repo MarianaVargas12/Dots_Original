@@ -77,12 +77,12 @@ public class JSONManager {
         obj.put("turn", turn);
         obj.put("score", score);
         obj.put("conscore", conscore);
-        for(int i=0; vertices.getNode(i).getData()!=null && vertices.getSize()>0;i++){
+        //for(int i=0; vertices.getNode(i).getData()!=null && vertices.getSize()>0;i++){
 
-            obj.put("x"+1, vertices.getNode(i).getX());
-            obj.put("x"+2, vertices.getNode(i).getY());
+          //  obj.put("x"+1, vertices.getNode(i).getX());
+            //obj.put("x"+2, vertices.getNode(i).getY());
 
-        }
+       // }
 
         return obj.toString();
     }

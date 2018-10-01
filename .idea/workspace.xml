@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c02beb-0d8f-4202-8161-50db0fe987dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/Game_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Game_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/JSONManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/JSONManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/NetworkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/NetworkClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/Vertices.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Vertices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/clientPull.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/clientPull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/fill.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/fill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/segmento.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/segmento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Adjacent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Adjacent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Figures.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Figures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/VectorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/VectorList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Figures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Path.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,12 +84,12 @@
     <session id="862878271">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="11885" />
+          <entry key="java" value="11909" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11885" />
+          <entry key="JAVA" value="11909" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -118,7 +97,7 @@
           <entry key="class" value="1" />
           <entry key="fxml" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="153" />
+          <entry key="java" value="164" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -126,7 +105,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="153" />
+          <entry key="JAVA" value="164" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -170,23 +149,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/src/sample/clientPull.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="-493">
+              <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/VectorNode.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Path.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="3825">
+              <caret line="334" column="48" selection-start-line="334" selection-start-column="48" selection-end-line="334" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -233,8 +216,6 @@
         <option value="$PROJECT_DIR$/List/src/ListID/ListID.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/main.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/main.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" />
         <option value="$PROJECT_DIR$/GUI/src/sample/clientPull.java" />
         <option value="$PROJECT_DIR$/GUI/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/GUI/src/sample/fill.java" />
@@ -248,10 +229,7 @@
         <option value="$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Figures.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Game.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Node.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/Path.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/Path.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Player.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Players.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" />
@@ -259,6 +237,11 @@
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Stack.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/VectorList.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/Path.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/Path.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" />
       </list>
     </option>
   </component>
@@ -389,7 +372,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538389503493" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538395469572" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/json-simple-1.1.1.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -616,22 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="310" column="25" selection-start-line="310" selection-start-column="25" selection-end-line="310" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI/src/sample/Game.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -748,27 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/sample/clientPull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Path.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -869,50 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Players.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -920,38 +819,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java">
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-          <folding>
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1517#1518#0" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/VectorList.java">
+    <entry file="file://$PROJECT_DIR$/GUI/src/sample/clientPull.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+        <state relative-caret-position="289">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/VectorNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="251">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/VectorList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Players.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="334" column="48" selection-start-line="334" selection-start-column="48" selection-end-line="334" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

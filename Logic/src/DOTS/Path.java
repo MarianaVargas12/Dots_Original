@@ -339,7 +339,7 @@ public class Path<T> {
                 Vertices(current);
             }
         } catch (NullPointerException e) {
-            System.out.println("Hacer algo si no sirve");
+            System.out.println(e );
         }
         return false;
     }
