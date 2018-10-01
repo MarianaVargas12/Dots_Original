@@ -16,7 +16,8 @@ public class SimpleLinkedListLines<T> {
 
 
 
-    public SimpleLinkedListLines append(Node node) {
+    public void append(T data) {
+        Node<T> node = new Node(data);
         Node<T> tmp = this.head;
         if (this.head == null) {
             this.head = node;
@@ -29,7 +30,6 @@ public class SimpleLinkedListLines<T> {
             node.setNext(null);
             this.size++;
         }
-        return null;
     }
 
     public Node<T> getNode(int index){

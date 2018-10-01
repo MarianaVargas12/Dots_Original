@@ -51,6 +51,7 @@ public class segmento {
 
                 try {
                     String message = manager.clientWrite(startX,startY,vertices[ind][4],vertices[ind][5],Controller.getId());
+                    System.out.println(message);
                     response=Controller.client.sendData(message);
                     bool = manager.getArg(response);
                     boolean line = (bool.get("line")).equals(true);

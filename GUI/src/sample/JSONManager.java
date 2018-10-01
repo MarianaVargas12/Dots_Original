@@ -7,8 +7,6 @@ public class JSONManager {
 
     JSONManager() {}
 
-    public static void main(String[] args) {
-    }
 
     public String clientWrite(int x1, int y1, int x2, int y2, String id) {
 

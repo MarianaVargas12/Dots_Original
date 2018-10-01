@@ -73,18 +73,16 @@ public class Controller {
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
-        new clientPull(2,id);
+        //new clientPull(2,id);
         onReady();
     }
-
     public void onReady(){
-        if(Play) {
-            System.out.println("aqui");
-            this.RegistroPanel.setVisible(false);
-            this.InicialPanel.setVisible(false);
-            this.EsperaPanel.setVisible(false);
-            this.ContricantePanel.setVisible(true);
-        }
+        System.out.println("aqui");
+        this.RegistroPanel.setVisible(false);
+        this.InicialPanel.setVisible(false);
+        this.EsperaPanel.setVisible(false);
+        this.ContricantePanel.setVisible(true);
+
     }
 
     public void onPlayButtonClicked(MouseEvent event) {

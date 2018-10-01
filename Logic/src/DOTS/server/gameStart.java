@@ -42,6 +42,7 @@ public class gameStart extends Thread{
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        System.out.println(xy);
         int x1 = ((Long)xy.get("x1")).intValue();
         int y1 = ((Long)xy.get("y1")).intValue();
         int x2 = ((Long)xy.get("x2")).intValue();
@@ -53,11 +54,9 @@ public class gameStart extends Thread{
         Node Node1 = malla.getNode(StartList).getData().getNode(StartNode);
         Node Node2 = malla.getNode(FinishList).getData().getNode(FinishNode);
         if (Node2==Node1.getRight() || Node2==Node1.getDown() || Node2==Node1.getLeft() || Node2==Node1.getUp() || Node2==Node1.getDrd() || Node2==Node1.getDld() || Node2==Node1.getDlu() || Node2==Node1.getDru()){
-            System.out.println(Node1.lineas);
+
             for (int i = 0; i < Node1.lineas.getSize(); i++) {
-                System.out.println("error");
-                System.out.println(Node1.lineas);
-                System.out.println(Node1.lineas.getNode(i));
+                System.out.println(Node1.lineas.getNode(i).getData());
                 if (Node2 == Node1.lineas.getNode(i).getData()) {
                     return false;
                 }
@@ -113,8 +112,6 @@ public class gameStart extends Thread{
                     ActiveGame=false;
                 }
                 else if (!players.isP2() && !id.equals(P1.getId())) {
-                    System.out.println(id);
-                    System.out.println(P1.getId());
                     P2.setColor(queue.color());
                     P2.setName(queue.name());
                     P2.setId(id);
@@ -199,7 +196,6 @@ public class gameStart extends Thread{
                                 ActiveGame=false;
                             }
                         } else if (Players.isT2()&& id.equals(P2.getId())) {
-
                             if (line == null) {
                             }
                             else {

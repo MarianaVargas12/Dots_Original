@@ -33,7 +33,6 @@ public class clientPull extends Thread {
                     bool = manager.getArg(response);
                     boolean playing = (bool.get("playing")).equals(true);
                     if(playing){
-                        Controller.setPlay(playing);
                         Thread.sleep(4000);
                         data=3;
                     }

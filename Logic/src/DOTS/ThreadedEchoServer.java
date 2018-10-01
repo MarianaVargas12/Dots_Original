@@ -9,7 +9,7 @@ import sample.Queue.LinkedQueue;
 
 public class ThreadedEchoServer {
 
-    static final int PORT = 1818;
+    static final int PORT = 1994;
     private static Players players;
     private static Player P1;
     private static Player P2;
