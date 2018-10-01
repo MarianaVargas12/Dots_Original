@@ -16,20 +16,22 @@ public class SimpleLinkedListLines<T> {
 
 
 
-    public SimpleLinkedListLines append(Node node) {
-        Node<T> tmp = this.head;
-        if (this.head == null) {
-            this.head = node;
+    public void append(T data){
+        Node<T> newNode=new Node<T>(data);
+        Node<T> tmp=this.head;
+        if (this.head==null){
+            this.head=newNode;
             this.size++;
-        } else {
+        }
+        else {
             while (tmp.getNext() != null) {
                 tmp = tmp.getNext();
             }
-            tmp.setNext(node);
-            node.setNext(null);
+            tmp.setNext(newNode);
+            newNode.setPrev(tmp);
+            newNode.setNext(null);
             this.size++;
         }
-        return null;
     }
 
     public Node<T> getNode(int index){

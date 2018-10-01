@@ -8,15 +8,20 @@ public class main {
         Node uno = game.Malla.getNode(0).getData().getNode(1);
         Node seis = game.Malla.getNode(1).getData().getNode(0);
         Node siete = game.Malla.getNode(1).getData().getNode(1);
-        System.out.println(siete);
         cero.lineas.append(uno);
+        uno.lineas.append(cero);
+
         uno.lineas.append(siete);
+        siete.lineas.append(uno);
+
         siete.lineas.append(seis);
+        seis.lineas.append(siete);
+
         seis.lineas.append(cero);
-        Path prueba = new Path(uno);
-        prueba.Vertices(cero);
+        cero.lineas.append(seis);
 
-
+        Path trial = new Path(cero);
+        trial.Vertices(cero);
     }
 
 

@@ -3,24 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="58c02beb-0d8f-4202-8161-50db0fe987dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/Game_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Game_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/JSONManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/JSONManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/NetworkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/NetworkClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/sample/segmento.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/segmento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/JSONManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/ThreadedEchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queue/src/Queue/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Queue/LinkedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queue/src/Queue/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/sample/Queue/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Players.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/Players.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/ThreadedEchoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/ThreadedEchoServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/src/DOTS/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/src/DOTS/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/SimpleLinkedListLines.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/SimpleLinkedListLines.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DOTS/DOTS/server/gameStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/DOTS/server/gameStart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/Queue/LinkedQueue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/Queue/LinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/Queue/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DOTS/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/LinkedQueue$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/LinkedQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DOTS/sample/NetworkClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DOTS/sample/NetworkClient.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,6 +127,34 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1810250936">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="34" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="34" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -139,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1989">
-              <caret line="135" column="19" lean-forward="true" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
+              <caret line="135" column="19" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#LogicLine#0;class#gameStart#0" />
@@ -149,42 +172,73 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
               <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
               <folding>
-                <element signature="e#2917#2918#0" expanded="true" />
-                <element signature="e#2944#2945#0" expanded="true" />
-                <element signature="e#2983#2984#0" expanded="true" />
-                <element signature="e#3011#3012#0" expanded="true" />
                 <element signature="e#3059#3060#0" expanded="true" />
-                <element signature="e#3086#3087#0" expanded="true" />
-                <element signature="e#2968#2969#0" expanded="true" />
-                <element signature="e#2995#2996#0" expanded="true" />
+                <element signature="e#3087#3088#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/src/sample/clientPull.java">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Path.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="173">
+              <caret line="314" column="30" selection-start-line="314" selection-start-column="12" selection-end-line="314" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/src/sample/segmento.java">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+            <state relative-caret-position="183">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="36" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -202,6 +256,7 @@
     <findStrings>
       <find>ListNode</find>
       <find>getNode(contador).getData()</find>
+      <find>System.out.println</find>
     </findStrings>
     <replaceStrings>
       <replace>Node</replace>
@@ -216,15 +271,11 @@
       <list>
         <option value="$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/ListNode.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/main.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/Path.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/EchoThread.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Game.java" />
         <option value="$PROJECT_DIR$/Queue/src/Queue/main.java" />
         <option value="$PROJECT_DIR$/DOTS.iml" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/Node.java" />
         <option value="$PROJECT_DIR$/Logic/src/DOTS/Player.java" />
-        <option value="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" />
         <option value="$PROJECT_DIR$/Queue/src/Queue/LinkedQueue.java" />
         <option value="$PROJECT_DIR$/List/src/Queue/LinkedQueue.java" />
         <option value="$PROJECT_DIR$/List/src/ListID/ListID.java" />
@@ -238,6 +289,12 @@
         <option value="$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java" />
         <option value="$PROJECT_DIR$/GUI/src/sample/clientPull.java" />
         <option value="$PROJECT_DIR$/GUI/src/sample/Controller.java" />
+        <option value="$USER_HOME$/IdeaProjects/DOTS 29.09.2018/Dots_Original/Logic/src/DOTS/Stack.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/Stack.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/main.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/Path.java" />
+        <option value="$PROJECT_DIR$/Logic/src/DOTS/Node.java" />
       </list>
     </option>
   </component>
@@ -247,7 +304,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -258,7 +315,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DOTS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DOTS" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -306,67 +400,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-              <item name="Logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-              <item name="Logic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-              <item name="Logic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DOTS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dots_Original" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dots_Original" type="462c0819:PsiDirectoryNode" />
-              <item name="Logic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DOTS" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538366833196" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Dots_Original - Copy" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538370815230" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/json-simple-1.1.1.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -389,7 +431,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="DOTS" />
@@ -436,9 +478,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ThreadedEchoServer" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -457,9 +499,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49769586" visible="true" weight="0.1785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49769586" visible="true" weight="0.16641453" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -468,7 +509,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2885246" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18057922" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39863715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -542,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/ListNode.java" />
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/VectorList.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -593,20 +627,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/EchoThread.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="698" column="29" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -618,31 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Path.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -669,16 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-146">
           <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,15 +688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/deploy.jar!/com/oracle/deploy/update/UpdateCheck.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1094">
-          <folding>
-            <element signature="e#0#2779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/deploy.jar!/com/oracle/deploy/update/UpdateCheck.class" />
     <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -732,9 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,41 +724,12 @@
         <state relative-caret-position="-1275" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/sample/segmento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/sample/clientPull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI/src/sample/NetworkClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="135" column="19" lean-forward="true" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#LogicLine#0;class#gameStart#0" />
-            <element signature="method#checkID#0;class#gameStart#0" />
           </folding>
         </state>
       </provider>
@@ -795,20 +741,117 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/server/gameStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="135" column="19" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#LogicLine#0;class#gameStart#0" />
+            <element signature="method#checkID#0;class#gameStart#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/src/sample/clientPull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/src/sample/segmento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUI/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
           <folding>
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#2983#2984#0" expanded="true" />
-            <element signature="e#3011#3012#0" expanded="true" />
             <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3086#3087#0" expanded="true" />
-            <element signature="e#2968#2969#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
+            <element signature="e#3087#3088#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/IdeaProjects/DOTS 29.09.2018/Dots_Original/Logic/src/DOTS/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/IdeaProjects/DOTS 29.09.2018/Dots_Original/Logic/src/DOTS/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="317" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="317" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/IdeaProjects/DOTS 29.09.2018/Dots_Original/Logic/src/DOTS/SimpleLinkedListLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/DoubleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="36" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/SimpleLinkedListLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/IdeaProjects/DOTS 29.09.2018/Dots_Original/Logic/src/DOTS/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="314" column="30" selection-start-line="314" selection-start-column="12" selection-end-line="314" selection-end-column="30" />
+          <folding>
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/src/DOTS/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -889,7 +932,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>json-simple-1.1.1</last-edited>
+          <last-edited>json-simple-1.1.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
