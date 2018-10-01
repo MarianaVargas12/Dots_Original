@@ -1,5 +1,9 @@
 package DOTS;
 
+/**
+ * Nodos con todas sus conexiones
+ * @param <T>
+ */
 public class Node<T> {
     public int x;
     public int y;
@@ -108,5 +112,13 @@ public class Node<T> {
 
     public void setUp(Node up) {
         this.up = up;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

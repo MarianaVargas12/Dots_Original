@@ -39,6 +39,11 @@ public class Controller {
     public Controller() {
     }
 
+    /**
+     *
+     * @param event
+     * Meetodo para salir e pantalla
+     */
     public void onExitButtonClicked(MouseEvent event) {
         Platform.exit();
         System.exit(0);
@@ -48,6 +53,10 @@ public class Controller {
         return id;
     }
 
+    /**
+     * Boton para cambiar de pantalla
+     * @param event
+     */
     public void onOkButtonClicked(MouseEvent event) {
         String response;
         JSONManager manager = new JSONManager();
@@ -76,8 +85,10 @@ public class Controller {
         //new clientPull(2,id);
         onReady();
     }
+    /**
+     * Cambio de pantalla luego de poder jugar
+     */
     public void onReady(){
-        System.out.println("aqui");
         this.RegistroPanel.setVisible(false);
         this.InicialPanel.setVisible(false);
         this.EsperaPanel.setVisible(false);
@@ -85,6 +96,10 @@ public class Controller {
 
     }
 
+    /**
+     * Boton para acceder al juego
+     * @param event
+     */
     public void onPlayButtonClicked(MouseEvent event) {
         this.RegistroPanel.setVisible(true);
         this.InicialPanel.setVisible(false);

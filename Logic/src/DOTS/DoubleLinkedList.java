@@ -17,6 +17,10 @@ public class DoubleLinkedList<T> {
         return size;
     }
 
+    /**
+     * Funcion para agregar nodos
+     * @param data
+     */
     public void append(T data){
         Node<T> newNode=new Node<T>(data);
         Node<T> tmp=this.head;
@@ -36,11 +40,15 @@ public class DoubleLinkedList<T> {
         }
     }
 
+    /**
+     * busca el nodo solicitado
+     * @param value
+     * @return nodo encontrado
+     */
     public Node<T> find(T value){
         Node<T> current=this.head;
         while(current!=null){
             if(current.getData().equals(value)){
-                System.out.println("found it");
                 return current;
             }
             else{
@@ -50,6 +58,11 @@ public class DoubleLinkedList<T> {
         return null;
     }
 
+    /**
+     * Le devuelve el nodo solicitado segun su posicion
+     * @param index
+     * @return
+     */
     public  Node<T> getNode(int index){
         Node<T> current=head;
         if (index<size){
@@ -65,6 +78,9 @@ public class DoubleLinkedList<T> {
         return null;
     }
 
+    /**
+     * Muestra la malla creada
+     */
     public void display(){
         Node<T> current = this.head;
         while (current!=null){
@@ -73,10 +89,14 @@ public class DoubleLinkedList<T> {
         }
     }
 
+    /**
+     * Muestra los  nodos de la malla
+     * @param Data
+     * @return  nodos
+     */
     public Node<T> show(Object Data){
         Node<T> current =this.head;
         if (current.getData()==Data){
-            System.out.println(current.getData());
             return current;
         }
         else{

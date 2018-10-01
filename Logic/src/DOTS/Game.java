@@ -4,6 +4,9 @@ public class Game {
 
     public DoubleLinkedList<DoubleLinkedList<Integer>> Malla;
 
+    /**
+     * realiza la malla del juego, con la que se podran hacer las conexiones
+     */
     public Game(){
         DoubleLinkedList<Integer> L1 = new DoubleLinkedList<Integer>();
         DoubleLinkedList<Integer> L2 = new DoubleLinkedList<Integer>();
@@ -30,6 +33,10 @@ public class Game {
         this.Malla = Malla;
     }
 
+    /**
+     * rellena la malla
+     * @param list
+     */
     public void fillup(DoubleLinkedList list){
         for (int i = 0; i < 6; i++) {
 
@@ -37,6 +44,10 @@ public class Game {
         }
     }
 
+    /**
+     * realiza una lista que conetiene listas
+     * @param malla
+     */
     public void naming(DoubleLinkedList<DoubleLinkedList<Integer>> malla){
         for (int i = 0; i < malla.getSize(); i++) {
 
@@ -50,6 +61,10 @@ public class Game {
 
     }
 
+    /**
+     * funcion para mostrar la malla
+     * @param malla
+     */
     public void display(DoubleLinkedList<DoubleLinkedList<Integer>> malla){
 
         for (int i = 0; i < malla.getSize(); i++) {

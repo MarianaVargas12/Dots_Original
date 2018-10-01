@@ -1,5 +1,7 @@
 package DOTS;
 
+import DOTS.server.gameStart;
+
 public class Path<T> {
     public Node<T> Startpoint;
     public Node<T> current;
@@ -14,7 +16,12 @@ public class Path<T> {
         this.Startpoint = Startpoint;
     }
 
-
+    /**
+     * en este metodo busca un elemento de una lista
+     * @param nodelines
+     * @param node2compare
+     * @return booleano depende de si se encuentra o no
+     */
     public boolean search(Node nodelines, Node node2compare) {
         for (int i = 0; i < nodelines.lineas.getSize(); i++) {
             if (node2compare == nodelines.lineas.getNode(i).getData()) {
@@ -24,6 +31,14 @@ public class Path<T> {
         return false;
     }
 
+    /**
+     * Busca un elemento dentro de uan lista
+     * @param nodei
+     * @param nodef
+     * @param dir
+     * @param list
+     * @return boleano
+     */
     public boolean in(Node nodei, Node nodef, int dir, VectorList list) {
         VectorNode node = new VectorNode(nodei, nodef, dir);
         for (int i = 0; i < list.size(); i++) {
@@ -35,7 +50,12 @@ public class Path<T> {
     }
 
 
-    public void Vertices(Node Startpoint) {
+    /**
+     * Verifica que la figura se haya cerrado o no
+     * @param Startpoint
+     * @return
+     */
+    public boolean Vertices(Node Startpoint) {
         try {
             current = Startpoint;
             Node<T> previous = null;
@@ -307,7 +327,13 @@ public class Path<T> {
                     previous = current;
                     current = current.getDrd();
                 }
+                gameStart.getP1().setShapes(coords);
+                gameStart.getP2().setShapes(coords);
                 figures.identify(vertices, coords.getSize());
+                return true;
+            }
+            else if (flag && current.checked==current.lineas.getSize()){
+                return false;
             }
             else{
                 Vertices(current);
@@ -315,6 +341,7 @@ public class Path<T> {
         } catch (NullPointerException e) {
             System.out.println("Hacer algo si no sirve");
         }
+        return false;
     }
 
 }

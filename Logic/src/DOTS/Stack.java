@@ -1,5 +1,9 @@
 package DOTS;
 
+/**
+ * clase pila para el recorrido de figuras
+ * @param <T>
+ */
 class Stack<T>{
     protected Node top ;
     protected int size ;
@@ -17,8 +21,10 @@ class Stack<T>{
     public int getSize(){
         return size;}
 
-
-    /*  Function to push an element to the stack */
+    /**
+     * agregar nodo
+     * @param newNode
+     */
     public void push(Node newNode){
         if (top == null)
             top = newNode;
@@ -30,7 +36,10 @@ class Stack<T>{
         size++ ;
     }
 
-
+    /**
+     * elimina nodo
+     * @return nodo
+     */
     public Node<T> pop(){
         if (isEmpty()){
             return null;
@@ -41,7 +50,10 @@ class Stack<T>{
         return node;
     }
 
-
+    /**
+     *
+     * @return nodo
+     */
     public Node<T> peek() {
         if (isEmpty()){
             return top;
@@ -50,18 +62,4 @@ class Stack<T>{
     }
 
 
-    public void display(){
-        System.out.print("\nStack = ");
-        if (size == 0)
-        {
-            System.out.print("Empty\n");
-            return ;
-        }
-        Node node = top;
-        while (node != null)
-        {
-            System.out.print(node+" ");
-            node = node.getPrev();
-        }
-    }
 }

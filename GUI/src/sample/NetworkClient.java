@@ -17,6 +17,12 @@ public class NetworkClient {
 
     }
 
+    /**
+     * Envia los datos al servidor por medio de sockets
+     * @param data
+     * @return
+     * @throws IOException
+     */
     public String sendData(String data) throws IOException {
 
         InetAddress address= InetAddress.getLocalHost();
@@ -27,7 +33,7 @@ public class NetworkClient {
         PrintWriter os=null;
         String response=null;
         try {
-            s1=new Socket(address, 1994); // You can use static final constant PORT_NUM
+            s1=new Socket(address, 1992); // You can use static final constant PORT_NUM
             br= new BufferedReader(new InputStreamReader(System.in));
             is=new BufferedReader(new InputStreamReader(s1.getInputStream()));
             os= new PrintWriter(s1.getOutputStream());

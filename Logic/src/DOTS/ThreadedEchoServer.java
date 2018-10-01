@@ -9,7 +9,7 @@ import sample.Queue.LinkedQueue;
 
 public class ThreadedEchoServer {
 
-    static final int PORT = 1994;
+    static final int PORT = 1992;
     private static Players players;
     private static Player P1;
     private static Player P2;
@@ -18,6 +18,10 @@ public class ThreadedEchoServer {
     private static LinkedQueue queue;
     private static ListID listID;
 
+    /**
+     * metodo que se encarga de las conexiones con el servidor
+     * @param args
+     */
     public static void main(String args[]) {
         ServerSocket serverSocket = null;
         Socket socket = null;

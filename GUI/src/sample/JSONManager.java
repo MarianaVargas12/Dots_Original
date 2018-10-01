@@ -8,6 +8,15 @@ public class JSONManager {
     JSONManager() {}
 
 
+    /**
+     * Mensaje que se le enviara al servidor
+     * @param x1
+     * @param y1
+     * @param x2
+     * @param y2
+     * @param id
+     * @return
+     */
     public String clientWrite(int x1, int y1, int x2, int y2, String id) {
 
         JSONObject obj = new JSONObject();
@@ -24,6 +33,13 @@ public class JSONManager {
 
     }
 
+    /**
+     * mensaje id que se le enviara al servidor al inicio
+     * @param id
+     * @param name
+     * @param color
+     * @return
+     */
     public String id(String id, String name,String color) {
 
         JSONObject obj = new JSONObject();
@@ -37,6 +53,12 @@ public class JSONManager {
 
 
     }
+
+    /**
+     * mensaje para relizar actualizacion
+     * @param id
+     * @return turno, vertices, scores
+     */
     public String pull(String id){
         JSONObject obj = new JSONObject();
 
@@ -46,6 +68,12 @@ public class JSONManager {
     }
 
 
+    /**
+     * metodo que devuelve lo del servidor, convierte datos
+     * @param arg
+     * @return un JSON
+     * @throws ParseException
+     */
     public JSONObject getArg(String arg) throws ParseException{
         JSONParser parser = new JSONParser();
 

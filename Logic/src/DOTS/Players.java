@@ -1,5 +1,8 @@
 package DOTS;
 
+/**
+ * Clase que se tienen datos de ambos jugadores
+ */
 public class Players {
     private boolean p1= false;
     private boolean p2=false;
@@ -35,18 +38,12 @@ public class Players {
         return t2;
     }
 
-    public int getScore1() {
-        return score1;
-    }
 
 
     public void setEnd1(boolean end1) {
         this.end1 = end1;
     }
 
-    public int getScore2() {
-        return score2;
-    }
 
     public void setEnd2(boolean end2) {
         this.end2 = end2;
@@ -60,14 +57,6 @@ public class Players {
         this.p2 = p2;
     }
 
-
-    public void setScore1(int score1) {
-        this.score1 = score1;
-    }
-
-    public void setScore2(int socre2) {
-        this.score2 = socre2;
-    }
 
     public void setT1(boolean t1) {
         this.t1 = t1;

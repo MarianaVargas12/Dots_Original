@@ -1,11 +1,14 @@
 package DOTS;
 
+/**
+ * Clase para id de jugador
+ */
 public class Player {
     private int score=0;
     private boolean turn= false;
     private String color="";
     private String name="";
-    private String shapes="";
+    private SimpleLinkedListLines shapes;
     private String id="a";
     private int conscore=0;
 
@@ -15,18 +18,6 @@ public class Player {
 
     public int getScore() {
         return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
-    public boolean isTurn() {
-        return turn;
-    }
-
-    public void setTurn(boolean turn) {
-        this.turn = turn;
     }
 
     public String getColor() {
@@ -45,11 +36,15 @@ public class Player {
         this.name = name;
     }
 
-    public String getShapes() {
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public SimpleLinkedListLines getShapes() {
         return shapes;
     }
 
-    public void setShapes(String shapes) {
+    public void setShapes(SimpleLinkedListLines shapes) {
         this.shapes = shapes;
     }
 

@@ -5,6 +5,9 @@ public class SimpleLinkedListLines<T> {
     private int size;
     public T data;
 
+    /**
+     * Lista enlazada simple
+     */
     public SimpleLinkedListLines() {
         this.head = null;
         this.size = 0;
@@ -15,7 +18,10 @@ public class SimpleLinkedListLines<T> {
     }
 
 
-
+    /**
+     * agregar elemento
+     * @param data
+     */
     public void append(T data) {
         Node<T> node = new Node(data);
         Node<T> tmp = this.head;
@@ -34,11 +40,15 @@ public class SimpleLinkedListLines<T> {
         }
     }
 
+    /**
+     *Se busca nodo por medio de un incdice
+     * @param index
+     * @return nodo
+     */
     public Node<T> getNode(int index){
         Node<T> current = head;
         if (index < size) {
             for (int j = 0; j < size; j++) {
-                System.out.println(current);
                 if (index == j) {
                     return current;
                 } else {

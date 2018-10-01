@@ -21,6 +21,11 @@ public class Main extends Application {
     public Main() {
     }
 
+    /**
+     * inicio del juego, pantalla mostrada
+     * @param primaryStage
+     * @throws Exception
+     */
     public void start(final Stage primaryStage) throws Exception {
         Main.game=primaryStage;
         Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("sample.fxml"));
@@ -43,6 +48,12 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
+    /**
+     * cambio de pantalla por la del  juego
+     * @param scene_route
+     * @throws IOException
+     */
     static void setScene(String scene_route) throws IOException{
         Parent root= FXMLLoader.load(Main.class.getResource(scene_route));
         Scene scene = new Scene(root);

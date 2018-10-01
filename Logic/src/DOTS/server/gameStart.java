@@ -1,3 +1,4 @@
+
 package DOTS.server;
 
 
@@ -9,9 +10,9 @@ import org.json.simple.parser.ParseException;
 import java.io.*;
 import java.net.Socket;
 
-public class gameStart extends Thread{
-    private  Player P1= ThreadedEchoServer.getP1();
-    private  Player P2=ThreadedEchoServer.getP2();
+public class gameStart extends Thread{;
+    private  static Player P1= ThreadedEchoServer.getP1();
+    private  static Player P2=ThreadedEchoServer.getP2();
     protected Socket socket;
     private Players players=ThreadedEchoServer.getPlayers();
     private DoubleLinkedList<DoubleLinkedList<Integer>> malla =ThreadedEchoServer.getMalla();
@@ -19,10 +20,25 @@ public class gameStart extends Thread{
     private boolean endGame=false;
     private LinkedQueue queue= ThreadedEchoServer.getQueue();
     private ListID listID= ThreadedEchoServer.getListID();
+    private boolean figura;
+    private static int Score;
+
 
 
     public gameStart(Socket client) {
         this.socket=client;
+    }
+
+    public static Player getP1() {
+        return P1;
+    }
+
+    public static Player getP2() {
+        return P2;
+    }
+
+    public static void setScore(int score) {
+        Score = score;
     }
 
     private boolean shape(){
@@ -32,8 +48,15 @@ public class gameStart extends Thread{
         node1.lineas.append(node2);
         node2.lineas.append(node1);
         Path path = new Path(node1);
+        figura=path.Vertices(node1);
     }
-
+    public boolean EndGame(){
+        if (P1.getScore()+30 > P2.getScore() || P1.getScore() < P2.getScore()+30 || endGame){
+            return true;
+        }else{
+            return false;
+        }
+    }
     private boolean CoordsToNode(String obj){
         JSONManager manager = new JSONManager();
         JSONObject xy = new JSONObject();
@@ -121,18 +144,54 @@ public class gameStart extends Thread{
                     out.flush();
                     ActiveGame=false;
                     //enviar booleano para pasar de pantalla
-                } else if (endGame) {
-                    if (P1.getScore() > P2.getScore()) {
-                        out.flush();
-                    }
-                    if (P1.getScore() < P2.getScore()) {
-
-                    }
-                    if (P1.getScore() == P2.getScore()) {
-
-                    }
                 } else if (players.isP1() && players.isP2()) {
                     if (id.equals(P1.getId()) || id.equals(P2.getId())) {
+                         if (endGame) {
+                            if (P1.getScore() > P2.getScore()) {
+                                if(id.equals(P1.getId())) {
+                                    players.setP1(false);
+                                    players.setP2(false);
+                                    String message = manager.end(true);
+                                    out.writeBytes(message + "\n");
+                                    out.flush();
+                                }else{
+                                    players.setP1(false);
+                                    players.setP2(false);
+                                    String message = manager.end(true);
+                                    out.writeBytes(message + "\n");
+                                    out.flush();
+                                } }
+                            if (P1.getScore() == P2.getScore()) {
+                                if (id.equals(P1.getId())) {
+                                    players.setP1(false);
+                                    players.setP2(false);
+                                    String message = manager.end(true);
+                                    out.writeBytes(message + "\n");
+                                    out.flush();
+                                } else {
+                                    players.setP1(false);
+                                    players.setP2(false);
+                                    String message = manager.end(true);
+                                    out.writeBytes(message + "\n");
+                                    out.flush();
+                                }
+
+                                if (P1.getScore() < P2.getScore()) {
+                                    if (id.equals(P1.getId())) {
+                                        players.setP1(false);
+                                        players.setP2(false);
+                                        String message = manager.end(false);
+                                        out.writeBytes(message + "\n");
+                                        out.flush();
+                                    } else {
+                                        players.setP1(false);
+                                        players.setP2(false);
+                                        String message = manager.end(true);
+                                        out.writeBytes(message + "\n");
+                                        out.flush();
+                                    }
+                                }
+                            }}
                         if(players.isEnd1() || players.isEnd2()){
                             if(id.equals(P1.getId())){
                                 String op = manager.Play(true);
@@ -159,7 +218,12 @@ public class gameStart extends Thread{
                             }
                             else {
                                 if (CoordsToNode(line)) {
-                                    if (shape()) {
+                                    if (figura) {
+                                        P1.setScore(P1.getScore()+Score);
+                                        P2.setConscore(P1.getScore()+Score);
+                                        players.setT1(false);
+                                        players.setT2(true);
+                                        System.out.println("yeei");
                                         players.setT1(false);
                                         players.setT2(true);
                                         String op = manager.line(true);
@@ -201,15 +265,21 @@ public class gameStart extends Thread{
                             else {
 
                                 if (CoordsToNode(line)) {
-                                    String draw = manager.line(true);
-                                    out.writeBytes(draw + "\n");
-                                    out.flush();
-                                    if (shape()) {
+                                    if (figura) {
+                                        P2.setScore(P2.getScore()+Score);
+                                        P1.setConscore(P2.getScore()+Score);
+                                        System.out.println("yeei");
+                                        String draw = manager.line(true);
+                                        out.writeBytes(draw + "\n");
+                                        out.flush();
                                         //figura formada enviar vertices y asignar puntos al id del jugador
                                         players.setT1(true);
                                         players.setT2(false);
                                         ActiveGame=false;
                                     } else {
+                                        String draw = manager.line(true);
+                                        out.writeBytes(draw + "\n");
+                                        out.flush();
                                         players.setT1(true);
                                         players.setT2(false);
                                         ActiveGame=false;
@@ -233,8 +303,14 @@ public class gameStart extends Thread{
                                     ActiveGame=false;
                                 }
                             }
-                        }else{
-                            String draw = manager.Turn(false);
+                        }else if(id.equals(P1.getId())){
+                            String draw = manager.update(false,P1.getScore(),P1.getConscore(),P1.getShapes());
+                            out.writeBytes(draw + "\n");
+                            out.flush();
+                            ActiveGame=false;
+                        }
+                        else if(id.equals(P2.getId())){
+                            String draw = manager.update(false,P2.getScore(),P2.getConscore(),P2.getShapes());
                             out.writeBytes(draw + "\n");
                             out.flush();
                             ActiveGame=false;

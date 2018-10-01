@@ -17,6 +17,12 @@ public class VectorList<T> {
         return this.size;
     }
 
+    /**
+     * agrega nodos
+     * @param nodei
+     * @param nodef
+     * @param dir
+     */
     public void append(Node<T> nodei, Node<T> nodef, int dir) {
         VectorNode<T> newNode = new VectorNode<T>(nodei, nodef, dir);
         VectorNode<T> tmp = this.head;
@@ -34,7 +40,11 @@ public class VectorList<T> {
     }
 
 
-
+    /**
+     * Obtiene la direccion de la linea
+     * @param index
+     * @return nodo
+     */
     public  VectorNode<T> getVectorNode(int index){
         VectorNode<T> current=head;
         if (index<size){

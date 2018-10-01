@@ -1,6 +1,10 @@
 package sample;
 
 public class Vertices {
+    /**
+     * creacion de array con los puntos
+     * @return array de los puntos
+     */
     public int[][] Vertices(){
         int [][] matrixVert= new int[38][6];
         int fil= 0;

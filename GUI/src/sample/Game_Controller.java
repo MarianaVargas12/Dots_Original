@@ -26,13 +26,20 @@ public class Game_Controller{
         this.Flag=false;
     }
 
-
+    /**
+     * Boton de salido
+     * @param event
+     */
     public void onExitButton(MouseEvent event) {
         Platform.exit();
         System.exit(0);
     }
 
 
+    /**
+     * metodo que realiza la linea despues de seleccionar dos puntos
+     * @param event
+     */
     public void coordinate(MouseEvent event){
         if(Flag==false){
             this.startX=event.getX();

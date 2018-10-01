@@ -14,6 +14,14 @@ public class segmento {
     private double endy;
     private static Line line1;
 
+    /**
+     * Ingreso de datos
+     * @param startx
+     * @param starty
+     * @param endx
+     * @param endy
+     * @throws IOException
+     */
     public segmento(double startx, double starty, double endx, double endy) throws IOException {
         this.starty=starty;
         this.startx=startx;
@@ -25,10 +33,23 @@ public class segmento {
 
     }
 
+    /**
+     *
+     * @return linea por hacer
+     */
     public static Line getLine1() {
         return line1;
     }
 
+    /**
+     * verifica que esa linea se pueda hacer
+     * @param Free
+     * @param startx
+     * @param starty
+     * @param endx
+     * @param endy
+     * @return
+     */
     public Line verif(boolean Free, int startx, int starty, int endx, int endy) {
         if (Free == true) {
             Line line1 = new Line(startx, starty, endx, endy);
@@ -41,6 +62,16 @@ public class segmento {
         return true;
     }
 
+    /**
+     * valida y se comunica con el servidor
+     * @param startX
+     * @param startY
+     * @param endX
+     * @param endY
+     * @param vertices
+     * @return
+     * @throws IOException
+     */
     public Line endVali(int startX, int startY, double endX, double endY, int[][] vertices) throws IOException {
         int ind = 0;
         String response;
@@ -65,6 +96,16 @@ public class segmento {
         return null;
     }
 
+    /**
+     * Acomoda los datos pra que puedan ser validads y verifica que no se pase de los limites
+     * @param startx
+     * @param starty
+     * @param endx
+     * @param endy
+     * @param vertices
+     * @return
+     * @throws IOException
+     */
     public Line drawLine(double startx, double starty, double endx, double endy, int[][] vertices) throws IOException {
         int ind = 0;
         int[] coord = new int[4];

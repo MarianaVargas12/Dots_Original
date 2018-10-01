@@ -2,6 +2,10 @@ package DOTS;
 
 public class Adjacent<T> {
 
+    /**
+     * realiza una doble lista enlazada donde coloca los adyacentes de cada nodo
+     * @param malla
+     */
     public void Seters (DoubleLinkedList<DoubleLinkedList<Integer>> malla){
         for (int i = 0; i < malla.getSize(); i++) {
 
