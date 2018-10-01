@@ -1,6 +1,8 @@
 package DOTS;
 
 public class Node<T> {
+    public int x;
+    public int y;
     public Node prev;
     public Node next;
     private T data;
@@ -12,19 +14,12 @@ public class Node<T> {
     private Node drd;
     private Node dlu;
     private Node dld;
+    public int checked;
     public SimpleLinkedListLines<T> lineas= new SimpleLinkedListLines<T>();
 
     public Node(T data) {
         this.next=null;
         this.data = data;
-    }
-
-    public SimpleLinkedListLines<T> getLineas() {
-        return lineas;
-    }
-
-    public void setLineas(SimpleLinkedListLines<T> lineas) {
-        this.lineas = lineas;
     }
 
     public Node<T> getDld() {

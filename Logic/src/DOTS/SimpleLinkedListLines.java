@@ -22,11 +22,13 @@ public class SimpleLinkedListLines<T> {
         if (this.head == null) {
             this.head = node;
             this.size++;
-        } else {
+        }
+        else {
             while (tmp.getNext() != null) {
                 tmp = tmp.getNext();
             }
             tmp.setNext(node);
+            node.setPrev(tmp);
             node.setNext(null);
             this.size++;
         }
