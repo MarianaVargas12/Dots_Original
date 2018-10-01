@@ -2,10 +2,10 @@ package DOTS.server;
 
 
 import DOTS.*;
-import Queue.LinkedQueue;
+import sample.ListID.ListID;
+import sample.Queue.LinkedQueue;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
-
 import java.io.*;
 import java.net.Socket;
 
@@ -17,8 +17,8 @@ public class gameStart extends Thread{
     private DoubleLinkedList<DoubleLinkedList<Integer>> malla =ThreadedEchoServer.getMalla();
     private boolean ActiveGame=true;
     private boolean endGame=false;
-    private LinkedQueue queue= new LinkedQueue();
-
+    private LinkedQueue queue= ThreadedEchoServer.getQueue();
+    private ListID listID= ThreadedEchoServer.getListID();
 
 
     public gameStart(Socket client) {
@@ -69,6 +69,17 @@ public class gameStart extends Thread{
             return false;
         }
     }
+    public boolean checkID(String id){
+        if(listID.getSize()==0){
+            listID.add(id);
+            return true;
+        }
+        else if(!listID.search(id)){
+            return true;
+        }
+        return false;
+
+    }
 
     public void run() {
         InputStream inp;
@@ -91,12 +102,12 @@ public class gameStart extends Thread{
                 xy = manager.getArg(line);
                 String id = (String) xy.get("id");
                 if (!players.isP1()) {
-                    P1.setColor("ndwejn");
-                    P1.setName("dnwj");
+                    P1.setColor(queue.color());
+                    P1.setName(queue.name());
                     P1.setId(id);
                     players.setP1(true);
                     System.out.println(players.isP1());
-                    String message = manager.Play(false,false,false);
+                    String message = manager.Connect(true);
                     out.writeBytes(message + "\n");
                     out.flush();
                     ActiveGame=false;
@@ -104,12 +115,11 @@ public class gameStart extends Thread{
                 else if (!players.isP2() && !id.equals(P1.getId())) {
                     System.out.println(id);
                     System.out.println(P1.getId());
-                    P2.setColor("ndwejn");
-                    P2.setName("dnwj");
+                    P2.setColor(queue.color());
+                    P2.setName(queue.name());
                     P2.setId(id);
                     players.setP2(true);
-                    players.setT1(true);
-                    String message = manager.Play(false,false,false);
+                    String message = manager.Connect(true);
                     out.writeBytes(message + "\n");
                     out.flush();
                     ActiveGame=false;
@@ -126,9 +136,27 @@ public class gameStart extends Thread{
                     }
                 } else if (players.isP1() && players.isP2()) {
                     if (id.equals(P1.getId()) || id.equals(P2.getId())) {
-                        String message = manager.Play(true,true,false);
-                        out.writeBytes(message + "\n");
-                        out.flush();
+                        if(players.isEnd1() || players.isEnd2()){
+                            if(id.equals(P1.getId())){
+                                String op = manager.Play(true);
+                                out.writeBytes(op + "\n");
+                                out.flush();
+                                players.setEnd1(false);
+                                ActiveGame=false;
+                            }else if(id.equals(P2.getId())){
+                                String op = manager.Play(true);
+                                out.writeBytes(op + "\n");
+                                out.flush();
+                                players.setT1(true);
+                                players.setEnd2(false);
+                                ActiveGame=false;
+                            }else{
+                                String op = manager.Turn(false);
+                                out.writeBytes(op + "\n");
+                                out.flush();
+                                ActiveGame=false;
+                            }
+                        }
                         if (Players.isT1() && id.equals(P1.getId())) {
                             if (line == null) {
                             }
@@ -137,14 +165,13 @@ public class gameStart extends Thread{
                                     if (shape()) {
                                         players.setT1(false);
                                         players.setT2(true);
-                                        String op = manager.serverWrite(true,false,false);
+                                        String op = manager.line(true);
                                         out.writeBytes(op + "\n");
                                         out.flush();
                                         //figura formada enviar vertices y asignar puntos al id del jugador
                                         ActiveGame=false;
                                     } else {
-                                        System.out.println("entroT1");
-                                        String draw = manager.serverWrite( false,false,false);
+                                        String draw = manager.line(true);
                                         out.writeBytes(draw + "\n");
                                         out.flush();
                                         players.setT1(false);
@@ -152,11 +179,20 @@ public class gameStart extends Thread{
                                         ActiveGame=false;
                                     }
 
-                                } else if ((line == null) || line.equalsIgnoreCase("QUIT")) {
+                                }
+                                else if(!CoordsToNode(line)){
+                                    String draw = manager.line( false);
+                                    out.writeBytes(draw + "\n");
+                                    out.flush();
+                                    players.setT1(true);
+                                    players.setT2(false);
+                                    ActiveGame=false;
+                                }
+                                else if ((line == null) || line.equalsIgnoreCase("QUIT")) {
                                     socket.close();
                                     ActiveGame=false;
                                 } else {
-                                    out.writeBytes(manager.serverWrite(false,false,false) + "\n");
+                                    out.writeBytes(manager.line(false) + "\n");
                                     out.flush();
                                     ActiveGame=false;
                                 }
@@ -169,7 +205,7 @@ public class gameStart extends Thread{
                             else {
 
                                 if (CoordsToNode(line)) {
-                                    String draw = manager.serverWrite(true,false,false);
+                                    String draw = manager.line(true);
                                     out.writeBytes(draw + "\n");
                                     out.flush();
                                     if (shape()) {
@@ -183,33 +219,47 @@ public class gameStart extends Thread{
                                         ActiveGame=false;
                                     }
 
-                                } else if ((line == null) || line.equalsIgnoreCase("QUIT")) {
+                                }
+                                else if(!CoordsToNode(line)){
+                                    String draw = manager.line( false);
+                                    out.writeBytes(draw + "\n");
+                                    out.flush();
+                                    players.setT1(false);
+                                    players.setT2(true);
+                                    ActiveGame=false;
+                                }
+                                else if ((line == null) || line.equalsIgnoreCase("QUIT")) {
                                     socket.close();
                                     ActiveGame=false;
                                 } else {
-                                    out.writeBytes(manager.serverWrite(false,false,false) + "\n");
+                                    out.writeBytes(manager.line(false) + "\n");
                                     out.flush();
                                     ActiveGame=false;
                                 }
                             }
                         }else{
-                            String draw = manager.Play(false,false,false);
+                            String draw = manager.Turn(false);
                             out.writeBytes(draw + "\n");
                             out.flush();
                             ActiveGame=false;
                         }
                         ActiveGame=false;
                     }else {
-                        String message = manager.Play(false, false, false);
-                        out.writeBytes(message + "\n");
-                        out.flush();
-                        ActiveGame = false;
+                        if(checkID(id)) {
+                            String name = (String) xy.get("name");
+                            String color = (String) xy.get("color");
+                            queue.enqueue(id, name, color);
+                            String draw = manager.Play(false);
+                            out.writeBytes(draw + "\n");
+                            out.flush();
+                            ActiveGame=false;
+                        }else{
+                            String draw = manager.Play(false);
+                            out.writeBytes(draw + "\n");
+                            out.flush();
+                            ActiveGame=false;
+                        }
                     }
-                    //else{
-
-                      //  queue.enqueue(id,"ndjsa","jdn");
-
-                    //}
                 }
             } catch (IOException | ParseException e) {
                 e.printStackTrace();

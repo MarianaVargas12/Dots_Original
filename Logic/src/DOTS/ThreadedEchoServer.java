@@ -4,16 +4,19 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import DOTS.server.gameStart;
+import sample.ListID.ListID;
+import sample.Queue.LinkedQueue;
 
 public class ThreadedEchoServer {
 
     static final int PORT = 1818;
-    private static boolean ActiveGame=true;
     private static Players players;
     private static Player P1;
     private static Player P2;
     private static DoubleLinkedList<DoubleLinkedList<Integer>> malla;
     private static Game game = new Game();
+    private static LinkedQueue queue;
+    private static ListID listID;
 
     public static void main(String args[]) {
         ServerSocket serverSocket = null;
@@ -26,6 +29,8 @@ public class ThreadedEchoServer {
             P1 = new Player();
             P2 = new Player();
             malla = game.Malla;
+            queue= new LinkedQueue();
+            listID= new ListID();
         } catch (IOException e) {
             e.printStackTrace();
 
@@ -55,6 +60,13 @@ public class ThreadedEchoServer {
 
     public static Player getP2() {
         return P2;
+    }
+    public static LinkedQueue getQueue(){
+        return queue;
+    }
+
+    public static ListID getListID() {
+        return listID;
     }
 }
 

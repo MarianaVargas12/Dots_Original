@@ -13,6 +13,9 @@ public class Game_Controller{
     private double endX;
     private double endY;
     private boolean Flag;
+    private int Score=0;
+    private int Conscore=0;
+    private boolean Turno;
 
 
     public Game_Controller(){
@@ -47,9 +50,17 @@ public class Game_Controller{
             }
 
         }
-
-
     }
 
+    public static void Score(int Score){
 
+    }
+    public static void Conscore(int conScore){
+
+    }
+    public void turno(boolean Turno){
+        if(Turno){
+            System.out.println("sii");
+        }
+    }
 }

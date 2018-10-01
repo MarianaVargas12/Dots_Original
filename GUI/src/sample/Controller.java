@@ -9,6 +9,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.net.URL;
@@ -18,8 +20,8 @@ import java.util.UUID;
 public class Controller {
     private static boolean Play = false ;
     private static String id;
-    public String name;
-    public String color;
+    private static String name;
+    private static String color;
     public static NetworkClient client;
     @FXML
     private AnchorPane InicialPanel;
@@ -47,30 +49,37 @@ public class Controller {
     }
 
     public void onOkButtonClicked(MouseEvent event) {
+        String response;
+        JSONManager manager = new JSONManager();
+        JSONObject bool;
+        id = String.valueOf(UUID.randomUUID());
+        System.out.println(id);
+        name = NombreField.getText();
+        color = IpField.getText();
+        client = new NetworkClient();
+        new clientPull(1,id);
         try {
-            id = String.valueOf(UUID.randomUUID());
-            System.out.println(id);
-            name = NombreField.getText();
-            color = IpField.getText();
-            this.RegistroPanel.setVisible(false);
-            this.InicialPanel.setVisible(false);
-            this.EsperaPanel.setVisible(true);
-            this.ContricantePanel.setVisible(false);
-            client = new NetworkClient();
-            JSONManager Manager = new JSONManager();
-            String message = Manager.id(id, name, color);
-            Play=client.sendData(message);
-        } catch (IOException e) {
+            String message = manager.id(id, Controller.getName(), Controller.getColor());
+            response=Controller.client.sendData(message);
+            bool = manager.getArg(response);
+            boolean connect = (bool.get("connect")).equals(true);
+            System.out.println(connect);
+            if(connect) {
+                this.RegistroPanel.setVisible(false);
+                this.InicialPanel.setVisible(false);
+                this.EsperaPanel.setVisible(true);
+                this.ContricantePanel.setVisible(false);
+            }
+        } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
-        //this.RegistroPanel.setVisible(true);
-        //this.InicialPanel.setVisible(false);
-        //this.EsperaPanel.setVisible(false);
-        //this.ContricantePanel.setVisible(false);
+        new clientPull(2,id);
+        onReady();
     }
 
-    public void onReadyButtonClicked(MouseEvent event) {
+    public void onReady(){
         if(Play) {
+            System.out.println("aqui");
             this.RegistroPanel.setVisible(false);
             this.InicialPanel.setVisible(false);
             this.EsperaPanel.setVisible(false);
@@ -88,5 +97,21 @@ public class Controller {
     @FXML
     public void OnGame() throws IOException {
         Main.setScene("Game.fxml");
+    }
+
+    public static String getName() {
+        return name;
+    }
+
+    public static String getColor() {
+        return color;
+    }
+
+    public static void setPlay(boolean play) {
+        Play = play;
+    }
+
+    public static boolean isPlay() {
+        return Play;
     }
 }

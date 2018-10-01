@@ -2,6 +2,7 @@ package sample;
 
 import javafx.scene.shape.Line;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 
@@ -42,13 +43,21 @@ public class segmento {
 
     public Line endVali(int startX, int startY, double endX, double endY, int[][] vertices) throws IOException {
         int ind = 0;
+        String response;
+        JSONManager manager = new JSONManager();
+        JSONObject bool;
         while (ind < 36) {
             if (vertices[ind][0] <= endX && endX<= vertices[ind][1] && vertices[ind][2] >= endY && endY >= vertices[ind][3]) {
-                JSONManager Manager= new JSONManager();
-                String message = Manager.clientWrite(startX,startY,vertices[ind][4],vertices[ind][5],Controller.getId());
-                Vali=Controller.client.sendData(message);
-                System.out.println(Vali);
-                return verif(Vali, startX, startY, vertices[ind][4], vertices[ind][5]);
+
+                try {
+                    String message = manager.clientWrite(startX,startY,vertices[ind][4],vertices[ind][5],Controller.getId());
+                    response=Controller.client.sendData(message);
+                    bool = manager.getArg(response);
+                    boolean line = (bool.get("line")).equals(true);
+                    return verif(line, startX, startY, vertices[ind][4], vertices[ind][5]);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
             }
             ind++;
         }

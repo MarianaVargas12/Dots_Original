@@ -1,7 +1,6 @@
 package DOTS;
 
 public class Players {
-    private static Players players= new Players();
     private boolean p1= false;
     private boolean p2=false;
     private static boolean t1=false;
@@ -11,8 +10,6 @@ public class Players {
     private int score1=0;
     private int score2=0;
 
-
-    public static void restart(){players= new Players();}
 
     public boolean isEnd1() {
         return end1;
@@ -42,9 +39,6 @@ public class Players {
         return score1;
     }
 
-    public static Players getPlayers() {
-        return players;
-    }
 
     public void setEnd1(boolean end1) {
         this.end1 = end1;
@@ -66,9 +60,6 @@ public class Players {
         this.p2 = p2;
     }
 
-    public static void setPlayers(Players players) {
-        Players.players = players;
-    }
 
     public void setScore1(int score1) {
         this.score1 = score1;

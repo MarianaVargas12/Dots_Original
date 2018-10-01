@@ -39,12 +39,10 @@ public class JSONManager {
 
 
     }
-    public String pull(String id, int Num){
+    public String pull(String id){
         JSONObject obj = new JSONObject();
 
         obj.put("id", id);
-        obj.put("pull", Num);
-
 
         return obj.toString();
     }

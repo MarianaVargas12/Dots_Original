@@ -1,5 +1,4 @@
-package Queue;
-import java.net.Socket;
+package sample.Queue;
 public class LinkedQueue {
 
     class Node {
@@ -25,7 +24,7 @@ public class LinkedQueue {
         size = 0;
     }
 
-    public void enqueue(String o, String name, String color) {
+    public void enqueue(String o,String name, String color) {
         Node new_node = new Node(o,name,color);
         System.out.println("enqueue");
         if (first == null) {
