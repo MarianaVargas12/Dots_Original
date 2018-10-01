@@ -1,6 +1,8 @@
 package DOTS;
 
 public class Node<T> {
+    public int x;
+    public int y;
     public Node prev;
     public Node next;
     private T data;

@@ -20,8 +20,14 @@ public class main {
         seis.lineas.append(cero);
         cero.lineas.append(seis);
 
+        System.out.println("------------------------------");
+        System.out.println(uno.lineas.getNode(1).getData());
+        System.out.println(siete);
+        System.out.println("------------------------------");
+
         Path trial = new Path(cero);
         trial.Vertices(cero);
+
     }
 
 

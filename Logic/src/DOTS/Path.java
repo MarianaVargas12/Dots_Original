@@ -6,8 +6,9 @@ public class Path<T> {
     private Node<T> head;
     public VectorList<T> visited = new VectorList<T>();
     public Stack<T> stack = new Stack<T>();
-    //public Figures figures = new Figures();
+    public Figures figures = new Figures();
     public int vertices;
+    public SimpleLinkedListLines<T> coords = new SimpleLinkedListLines<T>();
 
     public Path(Node Startpoint) {
         this.Startpoint = Startpoint;
@@ -55,10 +56,9 @@ public class Path<T> {
                             contador++;
                         } else {
                             if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
-
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -76,7 +76,7 @@ public class Path<T> {
 
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -93,7 +93,7 @@ public class Path<T> {
 
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -110,7 +110,7 @@ public class Path<T> {
 
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -127,7 +127,7 @@ public class Path<T> {
 
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -144,7 +144,7 @@ public class Path<T> {
 
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -161,7 +161,7 @@ public class Path<T> {
 
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -178,7 +178,7 @@ public class Path<T> {
 
                                 contador++;
                             } else {
-                                vertices++;
+                                vertices++; coords.append((T) figures.NodeToCoords(current));
                                 contador++;
                             }
                         }
@@ -195,7 +195,7 @@ public class Path<T> {
                     if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                         contador++;
                     } else {
-                        vertices++;
+                        vertices++; coords.append((T) figures.NodeToCoords(current));
                         contador++;
                     }
                     stack.push(previous);
@@ -209,7 +209,7 @@ public class Path<T> {
                         if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                             contador++;
                         } else {
-                            vertices++;
+                            vertices++; coords.append((T) figures.NodeToCoords(current));
                             contador++;
                         }
                     }
@@ -224,7 +224,7 @@ public class Path<T> {
                         if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                             contador++;
                         } else {
-                            vertices++;
+                            vertices++; coords.append((T) figures.NodeToCoords(current));
                             contador++;
                         }
                     }
@@ -239,7 +239,7 @@ public class Path<T> {
                         if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                             contador++;
                         } else {
-                            vertices++;
+                            vertices++; coords.append((T) figures.NodeToCoords(current));
                             contador++;
                         }
                     }
@@ -254,7 +254,7 @@ public class Path<T> {
                         if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                             contador++;
                         } else {
-                            vertices++;
+                            vertices++; coords.append((T) figures.NodeToCoords(current));
                             contador++;
                         }
                     }
@@ -269,7 +269,7 @@ public class Path<T> {
                         if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                             contador++;
                         } else {
-                            vertices++;
+                            vertices++; coords.append((T) figures.NodeToCoords(current));
                             contador++;
                         }
                     }
@@ -284,7 +284,7 @@ public class Path<T> {
                         if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                             contador++;
                         } else {
-                            vertices++;
+                            vertices++; coords.append((T) figures.NodeToCoords(current));
                             contador++;
                         }
                     }
@@ -299,7 +299,7 @@ public class Path<T> {
                         if (visited.getVectorNode(contador - 1).getDir() == visited.getVectorNode(contador).getDir()) {
                             contador++;
                         } else {
-                            vertices++;
+                            vertices++; coords.append((T) figures.NodeToCoords(current));
                             contador++;
                         }
                     }
@@ -307,6 +307,7 @@ public class Path<T> {
                     previous = current;
                     current = current.getDrd();
                 }
+                figures.identify(vertices, coords.getSize());
             }
             else{
                 Vertices(current);
